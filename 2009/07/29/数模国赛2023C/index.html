@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="蔬菜类商品的自动定价与补货决策摘要本研究探讨商超蔬菜商品的自动定价与补货决策。首先分析蔬菜品种间与品类间的关联性，之后根据历史销售数据分析商超的售货环境，建立以价值规律为基本思想的数学模型，通过遗传,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content=" - Hexo"/>
+    <meta name="twitter:description" content="蔬菜类商品的自动定价与补货决策摘要本研究探讨商超蔬菜商品的自动定价与补货决策。首先分析蔬菜品种间与品类间的关联性，之后根据历史销售数据分析商超的售货环境，建立以价值规律为基本思想的数学模型，通过遗传,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="Hexo"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content=" - Hexo"/>
+    <meta property="og:description" content="蔬菜类商品的自动定价与补货决策摘要本研究探讨商超蔬菜商品的自动定价与补货决策。首先分析蔬菜品种间与品类间的关联性，之后根据历史销售数据分析商超的售货环境，建立以价值规律为基本思想的数学模型，通过遗传,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>七月 29, 2009</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h1 id="蔬菜类商品的自动定价与补货决策"><a href="#蔬菜类商品的自动定价与补货决策" class="headerlink" title="蔬菜类商品的自动定价与补货决策"></a>蔬菜类商品的自动定价与补货决策</h1><h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>本研究探讨商超蔬菜商品的自动定价与补货决策。首先分析蔬菜品种间与品类间的关联性，之后根据历史销售数据分析商超的售货环境，建立以<strong>价值规律</strong>为基本思想的数学模型，通过遗传算法求解并给出补货与定价策略。</p>
+<p>在模型建立方面，对于问题一，本组基于数据特征改良了皮尔逊相关系数算法，更合理的计算蔬菜销售额的关联性。在探究分布规律时，对不同时间周期的分布规律作探究，发现每日，每周，每年均存在周期性；对于问题二，本组根据经济学原理，建立了一个基于 ARIMA 模型和傅里叶拟合的<strong>价值-价格-销量****分析框架</strong>，并采用<strong>遗传算法****来</strong>求解优化；对于问题三，本组基于问题二模型进行改进，加入了进货策略的约束条件，并更正目标函数；对于问题四，本组经过多方资料查证建立了三级六类的补货定价参考指标体系，并考虑实际运用的便捷，将其整理为适用于主成分分析法的形式。</p>
+<p>针对问题一，本文首先分析了不同蔬菜销售量对时间的分布规律，基于相关文献和事实，考察其季节性，周末购物倾向，用餐时间销售量；某些品类也受到如新冠疫情等年度趋势的影响。接着，为了了解不同蔬菜之间本身的关联程度，本文定义了主要销售时间范围，并使用<strong>改良的****皮尔逊相关系数</strong>来评估销售量之间的相关性，其好处在于不受偶然因素影响。最后，通过绘制热力图可视化展示不同品类之间的相关性，结合实际的社会生产生活，对品种及品类之间的相互关系做出了分析。</p>
+<p>针对问题二，我们首先发觉优化“成本加成定价率”与“定价”是等价的。接着通过历史销售数据和进货价格，创新性的结合社会经济学原理，分别采用 ARIMA 模型和傅里叶拟合预测基础销量和商品价值，并据此分析价格对销量的影响。对于打折策略，我们同样采用灵活的方式，即折扣力度与滞销量有关。综合考虑以上信息，构造指标计算公式，建立数学模型。最后，使用遗传算法进行最大化利润求解，以确定的最佳补货与定价策略。</p>
+<p>针对问题三，本文基于问题二的模型框架，结合商超实际销售条件做出销售品种、进货量方面的合理约束，之后复用其模型求解方式，简明高效的做出解答。</p>
+<p>针对问题四，本文查阅资料，分析了包括供应链、供求关系、蔬菜价格周期性变化、市场竞争等多方面可能影响商超进货与定价决策的信息，最终提出归属于自然原料、市场竞争、供应链分析这三大类的七项指标。并以层次分析法为目标形式，将其做出调整，使得提出的整个分析体系简明易用，具有实际指导意义。</p>
+<p>本组模型的主要创新点有：对于蔬菜品种的相关性分析，考虑到偶发性影响，通过定义主要销售时间取其重合部分的方式，保证了分析的稳定性。对于价格对销量的影响，考虑市场价值规律。</p>
+<h2 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h2><p>价值规律，时间序列预测，遗传算法</p>
+<h1 id="问题重述"><a href="#问题重述" class="headerlink" title="问题重述"></a>问题重述</h1><h2 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h2><p>在生鲜超市中，蔬菜类商品的经营具有一定的特殊性。蔬菜类商品的保鲜期相对较短，且其品质会随着销售时间的延长而逐渐下降，大多数蔬菜品种如果未能在当日售出，第二天即失去销售价值。因此，生鲜超市通常需每日根据历史销售数据与实际需求情况进行补货，以确保商品供应充足。</p>
+<p>补货操作通常发生在凌晨 3:00-4:00，这意味着商家在不确切了解各单品的进货价格情况下，必须在当日开始前就作出蔬菜品类的补货决策。此外，通常采用”成本加成定价”策略对蔬菜等生鲜产品进行定价，并且根据商品的运输损耗和品质下降的情况进行折扣销售。因此，商超对于顾客需求的准确分析在补货和定价策略的制定上至关重要。</p>
+<p>对于顾客需求和进货策略做出分析时，通常会从供需两个角度进行考虑：从需求角度来看，蔬菜商品的销售量通常会呈现一定的时间趋势。从供应角度来看，蔬菜的供应通常在 4 月至 10 月期间相对充足。然而，由于商超的销售空间有限，因此在这段时间内，制定合理的销售组合策略变得尤为重要。</p>
+<p>附件 1 提供了六个蔬菜品类的商品信息，附件 2 和附件 3 提供了商超 2020 年 7 月 1 日至 2023 年 6 月 30 日各商品的销售流水明细和批发价格数据，附件 4 提供了各商品近期的损耗率数据。</p>
+<h2 id="问题内容"><a href="#问题内容" class="headerlink" title="问题内容"></a>问题内容</h2><p><strong>问题 1: 蔬菜销售分布和关联性分析</strong><br>在本问中，需要分析不同蔬菜品类和单品之间的销售分布规律以及它们之间的关联关系。这将帮助了解哪些蔬菜品类或单品可能会同时受到影响，从而为补货和定价决策提供更多信息。</p>
+<p><strong>问题 2: 蔬菜品类的进货量与定价的决策</strong><br>本问要求研究各蔬菜品类的销售总量与成本加成定价之间的关系，并提供未来一周(2023 年 7 月 1-7 日)的，商超以品类为单位的日补货总量和定价策略，以最大化商超的收益。即建立数学模型，将销售量、成本、定价和收益联系起来，以找到最佳策略。</p>
+<p><strong>问题 3: 单品的补货计划和最大化商超收益</strong><br>在本问题中，由于销售空间有限，商超希望制定单品的补货计划，控制可售单品总数在 27-33 个之间，并满足每个单品的最小陈列量为 2.5kg。在此约束，根据 2023 年 6 月 24-30 日的可售品种，给出 7 月 1 日的单品补货量和定价策略，最大化商超的收益。</p>
+<p><strong>问题 4: 数据收集建议</strong><br>本问题需要查阅相关资料或根据数据做出评估，提出商超还需要收集哪些相关数据以更好地制定蔬菜商品的补货和定价决策。</p>
+<h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><h2 id="对蔬菜品种及品类的相关性分析"><a href="#对蔬菜品种及品类的相关性分析" class="headerlink" title="对蔬菜品种及品类的相关性分析"></a>对蔬菜品种及品类的相关性分析</h2><p>本问题要求对蔬菜品种（品类）的销售量进行基于时间的分析。首先，我们计划探究销售的周期性分布规律，考虑到不同时间尺度，如每年内月度销售的周期性变化以及每周内、每天内的周期性销售量波动。这一分析反映出通常情况下蔬菜生长的季节性和周末购物习惯等因素的影响。其次，对于年度趋势的分析也是必要的，以揭示销售量是否有长期的变化趋势。</p>
+<p>在研究不同蔬菜品种之间销售量的关联关系时，我们首先根据每个蔬菜品种的月旬销售量来确定其实际的销售时间段。接下来，为了评估不同品类或单品之间的销售量相关性，我们将采用统计方法例如皮尔逊相关系数，并通过可视化工具，如热力图，来比较销售模式的相似程度，以便进行深入的实际分析。</p>
+<p>同时，在这个过程中，我们将特别注意避免不合理的相关性假设。例如，为了衡量两种单品之间是否存在竞争关系，如果两个蔬菜的上市时间错开导致其销量呈现互补关系，这有可能是生长周期的季节因素导致的，我们将不会轻易地假设它们相互竞争，而是会选取主要销售月份有重叠的部分进行相关性分析。同时由于品种间的相关性，可能受到商超决策、供应链意外等偶发因素影响导致异常数据。因此，在分析蔬菜单品的相关性时，本文将只考虑那些销售时间主要重叠的单品对。</p>
+<h2 id="蔬菜品类的进货量与定价的决策"><a href="#蔬菜品类的进货量与定价的决策" class="headerlink" title="蔬菜品类的进货量与定价的决策"></a>蔬菜品类的进货量与定价的决策</h2><p>为确定价格对销量的影响，基于价值规律，我们引入了<strong>基础价值</strong>这一概念。<strong>基础销量</strong>是指在题目要求的七天内，如果按照品类的基础价值定价，将会有多少销售量。实际销量会根据实际价格与基础价值的相对关系，在基础销量上下波动。</p>
+<p>进货量最小应当满足送到商户手中的完好货物量大于等于实际销售量，即满足市场需求。多出的部分和运输损耗的部分以打折的形式卖出。故目标函数主要由两个方面构成，即正常销售所获得的利润和打折卖出所获得的利润（或亏损），而且以打折方式卖出的蔬菜越多，所需要的打折力度就越大，商户的利润就越少（亏损就越多）。</p>
+<p>问题二中，决策变量有两组，分别是定价和定货量，定价决定了当天的最终预期销售量，进货量决定了预期以打折方式卖出的蔬菜量，通过遗传算法对这两者进行优化，使得商户所获得的利益最大；基础销量和基础价值作为参考，在遗传优化之前已经完成求解，在优化过程中是定值。</p>
+<p>在预测基础销量时，考虑到季节性，应当使用时间序列预测模型确定当日的基础销量，以确保考虑到销量随时间的周期变化和某种随机性；由于基础价值不应该发生突变，可考虑采用传统的回归拟合方式，提高回归函数的可导性，确定相对稳定的基础价值。</p>
+<p><img src="/static/KHWebeItnoNJHpxRBYfcKZXLnag.png"></p>
+<h2 id="蔬菜品种的选择，进货量与定价的决策"><a href="#蔬菜品种的选择，进货量与定价的决策" class="headerlink" title="蔬菜品种的选择，进货量与定价的决策"></a>蔬菜品种的选择，进货量与定价的决策</h2><p>在问题二模型的基础上，问题三模型的变化有以下几点：</p>
+<p>1.优化对象从 6 个品类变为限定数量的单品：结合实际分析，一周时间内一家超市可售蔬菜品种类剧烈变化的可能性不大。本文近似假设 7 月 1-7 日可售品种与 6 月 24-30 日可售品种相同。</p>
+<p>2.进货量取值的变化：从问题一进货量在历史最小销售量的 0.5 倍和最大进货量的 1.5 倍之间取值，变为 2.5kg 到最大销售量 1.5 倍之间取值，并且进货量还可以取 0（代表不进货）。从算法的角度考虑，为了使算法优化效率更高，考虑引入选择变量（0-1 变量）表示进货与否，通过将大于 2.5kg 的进货量与选择变量相乘得到真实进货量，这样就把不连续域的约束转换成了 box 型约束。</p>
+<p>3.进货量需要满足市场对各类商品需求：这是一个不等约束，要求选择的蔬菜单品中，每一品类蔬菜的销量都应当大于某一定值。这一定值仅与时间有关，反应了市场对此类产品的需求。在本文中，即某品类在某一时间点的基础销量。</p>
+<p>4.单品数量约束：由于货架的摆放空间有限，选择进货的产品单品数量应该在 27 到 33 之间，只需对选择变量求和，将其限制在该范围内即可。</p>
+<p>除此以外，问题三中对基础销量、价值的估计方法与问题二均相同，优化求解仍使用遗传算法。</p>
+<h2 id="进一步分析所需的数据"><a href="#进一步分析所需的数据" class="headerlink" title="进一步分析所需的数据"></a>进一步分析所需的数据</h2><p>问题四要求在历史销售数据的基础上进行更深入的分析，并思考哪些相关数据可以为商超提供进货和定价策略方面的支持。在上述三个问题的解决过程中，商超已经充分考虑了历史销售数据、商品价格趋势以及蔬菜品类之间的关系。然而，为了进一步提升决策的质量和增加盈利能力，商超可以考虑其他信息，如蔬菜的质量水平、市场竞争情况、蔬果商品供应链等相关数据。</p>
+<p>通过综合考虑这些多方面因素，商超可以制定更全面的进货和定价策略，使其在市场上更有竞争力。举例而言，了解蔬菜的质量标准可以有助于选择高质量的供应商，从而提供更好的产品质量。同时，了解市场竞争情况可以帮助商超调整定价策略，以在不同市场环境中实现更好的销售和利润。此外，深入了解蔬果供应链的特点和影响因素，可以帮助商超更好地规划进货和库存管理策略，从而降本增效</p>
+<h1 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h1><p>附件 2 中提供了三年销售的详细信息，达到 88 万条，由于数据量较大，需要对数据进行一定的预处理，防止其中明显的错漏影响后续问题的分析。</p>
+<p>使用 Excel 整理附件二数据，数据格式没有明显错误。检测异常值，发现三年间的 88 万条数据中只有 1 条单笔销量超过 50 千克，达到 160 千克，并且是整数。考虑到超市零售的性质，认为该数据为明显错漏或偶然现象，予以剔除。此外，对于退货数据，我们找到与之匹配的销售数据，两者同时进行销毁。至此我们得到了三年来销售数据的真实情况。</p>
+<p>附件二中按照售卖记录进行交易的数据格式非常不利于计算与统计，因此对附件二数据进行整合。</p>
+<p>1.挑选每一种蔬菜单品的数据，并对销售量按日求和，得到蔬菜单品每日销量</p>
+<p>2.观察每一种单品单日内价格情况，发现一日内价格只有打折和未打折两种，即打折方式和定价在一日内不变化</p>
+<p>3.每个品类数据集中应当包含其所有单品汇总后的单品每日数据</p>
+<p>4.将日数据按照 36 个月旬进一步汇总，以得到整体变化的数据</p>
+<p>5.将三年的数据通过求平均值（只有两年数据的单品取两年，只有一年的直接使用）化为一年的数据</p>
+<p>至此，我们得到了易于分析的交易数据，预处理部分完成。</p>
+<h1 id="模型假设与符号说明"><a href="#模型假设与符号说明" class="headerlink" title="模型假设与符号说明"></a>模型假设与符号说明</h1><h2 id="模型假设"><a href="#模型假设" class="headerlink" title="模型假设"></a>模型假设</h2><ul>
+<li>假设 1：附件所给数据中，商超没有发生重大决策失误</li>
+<li>假设 2：附件所给数据为三年所有销售数据，没有遗漏</li>
+<li>假设 3：7 月 1-7 日可售品种与 6 月 24-30 日可售品种相同</li>
+</ul>
+<h2 id="符号说明"><a href="#符号说明" class="headerlink" title="符号说明"></a>符号说明</h2><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>$$</td>
+<td></td>
+</tr>
+<tr>
+<td>p_{i,j}</td>
+<td></td>
+</tr>
+<tr>
+<td>$$</td>
+<td></td>
+</tr>
+</tbody></table>
+<pre><code>    | 蔬菜品种$i$在月旬$j$的销售量     |
+</code></pre>
+<p>|<br>$$<br>P_{i,j}<br>$$</p>
+<pre><code>    | 蔬菜品类$i$在月旬$j$的销售量     |
+</code></pre>
+<p>|<br>$$<br>Vbase_i<br>$$</p>
+<pre><code>    | 品类$i$的基础价值              |
+</code></pre>
+<p>|<br>$$<br>Knum_i<br>$$</p>
+<pre><code>     | 品类$i$中的品种                |
+</code></pre>
+<p>|<br>$$<br>s_{i,j}<br>$$</p>
+<pre><code>    | 蔬菜品种$i$在第$j$天的定价       |
+</code></pre>
+<p>|<br>$$<br>S_{i,j}<br>$$</p>
+<pre><code>    | 蔬菜品类$i$在第$j$天的定价       |
+</code></pre>
+<p>|<br>$$<br>\hat{p}_{i,j}<br>$$</p>
+<p>  | 蔬菜品种$i$在第$j$天的预期销售量 |<br>|<br>$$<br>\hat{P}_{i,j}<br>$$</p>
+<p>  | 蔬菜品类$i$在第$j$天的预期销售量 |<br>|<br>$$<br>\hat{b}_{i,j}<br>$$</p>
+<p>  | 蔬菜品种$i$在第$j$天的预期进货量 |<br>|<br>$$<br>\hat{B}_{i,j}<br>$$</p>
+<p>  | 蔬菜品类$i$在第$j$天的预期进货量 |<br>|<br>$$<br>\hat{j}_{i,j}<br>$$</p>
+<p>  | 蔬菜品种$i$在第$j$天的预期进价   |<br>|<br>$$<br>\hat{J}_{i,j}<br>$$</p>
+<p>  | 蔬菜品类$i$在第$j$天的预期进价   |<br>|<br>$$<br>lr_i<br>$$</p>
+<pre><code>       | 蔬菜品种$i$的损失率            |
+</code></pre>
+<p>|<br>$$<br>LR_i<br>$$</p>
+<pre><code>       | 蔬菜品类$i$的损失率            |
+</code></pre>
+<p>|<br>$$<br>DP_{i,j}<br>$$</p>
+<pre><code>   | 蔬菜品类$i$在第$j$天的折后价     |
+</code></pre>
+<p>|<br>$$<br>Kind_i<br>$$</p>
+<pre><code>     | 蔬菜品类$i$中蔬菜单品的集合    |
+</code></pre>
+<p>|<br>$$<br>KS<br>$$</p>
+<pre><code>         | 第三问中选择的蔬菜品种集合   |
+</code></pre>
+<p>|<br>$$<br>Pro<br>$$</p>
+<pre><code>        | 商超销售策略的总利润         |
+</code></pre>
+<p>|<br>$$<br>Pro_{base}<br>$$</p>
+<pre><code> | 商超基准销售策略的总利润     |
+</code></pre>
+<p>|<br>$$<br>Pro_{discount}<br>$$</p>
+<p> | 商超打折销售策略的总利润     |</p>
+<h1 id="问题一的建模与解答"><a href="#问题一的建模与解答" class="headerlink" title="问题一的建模与解答"></a>问题一的建模与解答</h1><h2 id="分布规律分析"><a href="#分布规律分析" class="headerlink" title="分布规律分析"></a>分布规律分析</h2><h3 id="以年为单位的周期规律"><a href="#以年为单位的周期规律" class="headerlink" title="以年为单位的周期规律"></a>以年为单位的周期规律</h3><p>蔬菜销售量的分布规律对于分析市场情况和蔬菜之间的关联关系十分关键。首先，基于参考文献$^{[1]}$，生鲜蔬菜销售量容易受季节变化的影响，我们在题目所给数据中同样发现了这一规律。这一结论是合乎逻辑的，因为蔬菜的生长和成熟具有明显的季节性特征，应季蔬菜产量大，价格低，品质好，从而导致应季蔬菜销量高。不同蔬菜品种通常在不同季节成熟，因此它们的销量高峰也有所不同。将每个月分为上中下三旬，每个月旬代表大约 10 天的时间，如下图 5.1、5.2 所示，图中的横坐标代表一年中的月旬。</p>
+<p><img src="/static/Rt1Tbm0o8oao4SxC6f7cFNyHnYe.png"><br><img src="/static/UjlwbAbEHosQA3x3TXVcitksnA8.png"></p>
+<h3 id="以周为单位的周期规律"><a href="#以周为单位的周期规律" class="headerlink" title="以周为单位的周期规律"></a>以周为单位的周期规律</h3><p>另外，也可以在蔬菜销售数据中观察到以周为单位的变化。绘制茄类和西兰花这两个品类和品种的日销量图如下图 5.3、5.4 所示。</p>
+<p><img src="/static/KOyKb4vMHog6zwxLJiic78vJnsf.png"><br><img src="/static/QDaNbKAS0ooXozxoIhqcVwDjnPf.png"></p>
+<p>我们注意到在周五出现了明显的销售量高峰。这可能是因为消费者倾向于在周末购买蔬菜，以备周末的烹饪和食用。这种周期性变化在市场销售中是常见的，它提醒我们不仅要考虑季节性因素，还要考虑每周的销售模式。</p>
+<h3 id="以年为单位的趋势变化"><a href="#以年为单位的趋势变化" class="headerlink" title="以年为单位的趋势变化"></a>以年为单位的趋势变化</h3><p>绘制三年间茄类和黄白菜两个品类和品种的销售量图，如下图 5.6、5.7 所示。</p>
+<p><img src="/static/S12lbDWhtoioGrxe2JSclUecnCc.png"><br><img src="/static/I46ubhbODo2eVOxte8BcDGrznzf.png"></p>
+<p>我们观察到，某些蔬菜品类销售量除了受到周期影响以外，受到年度影响也很显著。从 2020 年以来，蔬菜销量处于总体下降的趋势。这可能是随新冠疫情政策放宽，越来越多的居民选择到餐馆吃饭而不亲自烹饪。</p>
+<h3 id="以小时为单位的趋势变化"><a href="#以小时为单位的趋势变化" class="headerlink" title="以小时为单位的趋势变化"></a>以小时为单位的趋势变化</h3><p>如下图 5.8 所示，我们可以发现上午 9 点到中午 11 点和下午 4 点到下午 6 点是总销售量较高的时间段，因为人们倾向于新鲜度更高的蔬菜，所以顾客可能更愿意在一天的早些时候购买蔬菜，以确保食材的质量。而晚间蔬菜虽然不如早晨新鲜，但是由于人们大部分在此时间段下班回家，因此顺带购买的行为也带来了一波销售高峰。</p>
+<p>我们同时发现晚上 21 点到 22 点是极低销售量的时段，这可能是因为临近商超关门时间，客流量减少，也与晚间蔬菜新鲜度大幅下降，顾客购买欲望降低有关。</p>
+<p><img src="/static/Kdf0bZAOMo03qlx5Az6cdlVlnRg.png"></p>
+<h2 id="相关关系分析"><a href="#相关关系分析" class="headerlink" title="相关关系分析"></a>相关关系分析</h2><p>当多种蔬菜在同一季节上市时，相互之间可能存在竞争关系，由于生长季节影响，生长周期相似的蔬菜可能具有相同的销售模式。为了分析蔬菜不同品类和不同品种之间的关联，我们使用改进的皮尔逊相关系数算法来分析蔬菜之间的相关性。</p>
+<h3 id="定义主要销售时间"><a href="#定义主要销售时间" class="headerlink" title="定义主要销售时间"></a>定义主要销售时间</h3><p>为了更深入地了解蔬菜品类或单品之间的相互关系，我们首先对销售数据进行了主要售卖时间范围的定义。这一步骤帮助我们提取该超市每个蔬菜品种的销售高峰特征，并将其量化表示。</p>
+<p>首先，我们将三年的销售数据通过通过取平均值转化为一年的数据，以消除部分随机性的影响。然后，我们将某品种在某月旬内的销售量与其年平均销量进行比较，如果某个月旬的销售量达到或超过年平均销量的一半（即 150%），则将该月旬定义为该品种的主要售卖时间。</p>
+<p>需要注意的是，由于数据来自于一家超市，这里得到的单品的主要售卖时间受到偶然因素影响较大，不能很好的反映该单品的市场变化。</p>
+<h3 id="相关性分析"><a href="#相关性分析" class="headerlink" title="相关性分析"></a>相关性分析</h3><p>对于蔬菜品类的相关性衡量，基于假设 1 和假设 2，某一天某一品类的蔬菜受到决策的影响而全部缺失是不可能的，也就是说蔬菜品类的销量能较好的反应市场环境，可以直接进行相关系数的计算。对于蔬菜单品，考虑到附件所给数据来源于一家超市，由于人为决策失误，供应商缺货等原因所导致的数据缺失是相当有可能的（如下图 5.9 所示，高山大白菜在销售高峰数据明显缺少），如果直接计算这些数据的相关系数，所求得的相关性就很大程度受到偶然因素的影响，不能很好的反应两种单品本身的关系。因此在分析单品相关性时，我们只分析主要售卖时间有重合的单品，并且只分析重叠时间内的数据。</p>
+<p><img src="/static/GwtHbvtkFokkZsxvmjucTQjLnLd.png"></p>
+<p>在进行相关性计算时，本文以蔬菜品种或品类的月旬总销量作为计算单位。皮尔逊相关系数是一种用于度量两个变量之间线性关系强度的统计方法，对于两个蔬菜品种之间的皮尔逊相关系数，计算公式如下：</p>
+<ul>
+<li>皮尔逊相关系数： $ r &#x3D; \frac{\sum{(X_{i,n} - \bar{X_i})(X_{j,n} - \bar{X_j})}}{\sqrt{\sum{(X_{i,n} - \bar{X_i})^2}\sum{(X_{j,n} - \bar{X_j})^2}}} \$</li>
+</ul>
+<p>本式中，$X_i$、$X_j$ 表示两个蔬菜品种,下标 n 表示其在第 n 月旬的总销量，$\bar{X_i}$表示其在所有月旬的销量均值。如果 r 的值接近 1，表示两个品种之间存在正相关关系，如果接近 -1，表示存在负相关关系，如果接近 0，则表示几乎没有线性关系。</p>
+<p>而对于两个素菜品类的相关性，则对于某个品类，在其内部对于所有品种的月旬销量求和，以此为单位进行计算，即：</p>
+<ul>
+<li>$ r &#x3D; \frac{\sum{(Y_{i,n} - \bar{Y_i})(Y_{j,n} - \bar{Y_j})}}{\sqrt{\sum{(Y_{i,n} - \bar{Y_i})^2}\sum{(Y_{j,n} - \bar{Y_j})^2}}} \$</li>
+</ul>
+<p>其中，$Y_{i,n}&#x3D;\sum_{sub_i}{X_{i,n}}$为品类 i 的第 n 个月旬总销量</p>
+<h3 id="蔬菜品类的相关性"><a href="#蔬菜品类的相关性" class="headerlink" title="蔬菜品类的相关性"></a>蔬菜品类的相关性</h3><p>通过计算不同蔬菜品种之间的皮尔逊相关系数，我们可以得到不同蔬菜品种品类之间的销售关系的相关性。为了更清晰地展示这些关系，本文利用这些数据创建相关性热图 5.10，以直观分析各种蔬菜的相关性。</p>
+<p><img src="/static/YOIibsTyTofzDWxz0nicTcjDnHh.png"></p>
+<p>观察下图 5.11、5.12，可以发现在蔬菜品类中，食用菌与水生根茎的相关性最为明显，花菜和花叶类蔬菜的相关性次之，而茄类和食用菌以及水生根茎类蔬菜均呈现负相关关系。</p>
+<p><img src="/static/BAmubjAEwoWC23xymgWcOPFinZb.png"><br><img src="/static/SY1ybEcBdoURWkxG2fucdLuYn7g.png"></p>
+<p>这也与农业上的客观分析相吻合$^{[1][2]}$</p>
+<h3 id="蔬菜品种的相关性"><a href="#蔬菜品种的相关性" class="headerlink" title="蔬菜品种的相关性"></a>蔬菜品种的相关性</h3><p>相关性分析要求至少有 30 个数据样本，因此我们只分析主要销售时间重叠超过 4 个月旬的蔬菜单品对，由于数量过大，这里只展示几例经典的品种如下表 5.1，其中第三列为前两列中蔬菜的相关系数，支撑材料中给出了所有符合条件单品对的相关系数相关文件和相关系数绝对值大于 0.95 的文件：</p>
+<p><img src="/static/IFRAbv200obM8ExQ0bMc3dh6n9g.png"><br><img src="/static/NGoUbSDI7oc1RoxnUgfc3pdin6f.png"></p>
+<p>可以看到，强相关的单品种类非常多，分析效果明显。</p>
+<h1 id="问题二的建模与解答"><a href="#问题二的建模与解答" class="headerlink" title="问题二的建模与解答"></a>问题二的建模与解答</h1><h2 id="模型的初步建立"><a href="#模型的初步建立" class="headerlink" title="模型的初步建立"></a>模型的初步建立</h2><p>在问题二模型的建立中，由于每个品类中不同蔬菜定价不同，首先需要考虑的是品类的平均定价如何计算。我们根据往年销售量，对某一品类中所有单品在各个时间点的售价取加权平均，得到该品类平均定价随时间变化的数据。</p>
+<p>鉴于蔬菜属于初级农产品，我们认为其实际价值波动不大$^{[3]}$。根据历史销售数据求得的该品类平均定价，我们采用傅里叶拟合方法来计算其 7 月 1 日至 7 日的<strong>基础价值。</strong>同理，进价的价值计算也可以使用相同的方法，不再赘述。</p>
+<p>品类的基础销量较为容易处理，即取该品类所有单品一日内销售总量作为该品类一日内销售总量即可。根据品类的销售总量数据，可以通过时间序列模型得到 7 月 1 日至 7 日的<strong>基础销量。</strong>这两者共同构成了决定最终预期销售量的基准参考值。</p>
+<p>接下来，我们考虑<strong>定价和进货量作为决策变量</strong>。当产品定价高于基础价值时，购买客户减少，从而导致最终预期销售量减少；而当定价低于基础价值时，最终预期销售量增加，但单位利润减少，关系如下图 6.1 所示。进货量决定了最终会有多少蔬菜超出正常销售量，需要以打折的形式卖出。为保证能够全部卖完，以打折形式卖出的蔬菜越多，折扣力度应当越大，甚至亏本；而亏本销售的情况显然是需要尽量避免的，因此折扣销售的目标就是调整进货量以最大化其利润。</p>
+<p><img src="/static/Dj4tbtI7ao1ybExxBBkcEI3vnXc.png"></p>
+<p>综上所述，本题需要最大化的<strong>目标函数</strong>是：以正常方式卖出的利润 + 折扣方式赚得的利润（损失）。</p>
+<p><strong>限制条件</strong>有以下几条：</p>
+<p>整体流程如图 6.2 所示，其中加粗线条部分表示遗传算法求解的迭代步骤。</p>
+<p><img src="/static/BEjtbRoSgo9Tqmxd0rJc8o4Enic.png"></p>
+<h2 id="基础销量估算"><a href="#基础销量估算" class="headerlink" title="基础销量估算"></a>基础销量估算</h2><p>基础销量指的是在正常定价情况下蔬菜品类的销量，仅受时间影响。因此考虑使用时间序列预测来估算每个蔬菜品类在未来一周（2023 年 7 月 1-7 日）的基础销量。</p>
+<p>自回归整合滑动平均模型（ARIMA）是一种广泛用于时间序列预测的统计模型。它结合考虑了自回归（AR）、差分（I）和滑动平均（MA），以捕捉历史数据中的趋势、季节性和噪声成分。</p>
+<p><strong>ARIMA 模型****的建立：</strong></p>
+<p>接下来，我们将对每个品类的销售数据应用 ARIMA 模型进行基础销量的预测。ARIMA 模型通常包括以下步骤：</p>
+<ol>
+<li><strong>差分操作（I，整合阶数）：</strong></li>
+</ol>
+<p>为了应用 ARIMA 模型进行销量预测，首先对每个蔬菜品类的历史销售数据做出时间序列图和自相关图（篇幅原因，以花菜类为例）</p>
+<p><img src="/static/JOjgbge5Eo0bgmxe1nTc5KnunAg.png"><br><img src="/static/O4jYbNskYoZomNxDsvQcRsoznrr.png"></p>
+<p>可以看出，花菜类的时间序列图 6.3 表现出明显的季节性周期趋势，且自相关图 6.4 下降比较慢，判定为非平稳序列，考虑对数据进行一阶差分处理。</p>
+<p>一阶差分是指计算相邻两天销售量的差值。这个操作有助于将原始销售数据转化为平稳的时间序列，去除了数据中的趋势和季节性成分，使数据更适合 ARIMA 模型的应用。</p>
+<p>一阶差分的数学表示为：$\nabla P_{i,j} &#x3D; P_{i,j} - P_{i,j-1}$</p>
+<p>其中，$P_{i,j}$表示蔬菜品类$i$在月旬$j$的销售量。更高阶差分以此类推，在一阶的差分结果上套用上述公式即可。</p>
+<p><img src="/static/Ilijbe7PnorBuRxvQ8gc2CUwnud.png"></p>
+<p>作出一阶差分后的自相关图 6.5，自相关系数立即下降到 0 附近并在 0 附近波动，最大值基本不超过 0.2，可以认为差分后的数据是平稳的。</p>
+<ol>
+<li><strong>模型提出<strong><strong>（</strong></strong>根据<strong><strong>PACF</strong></strong>与 ACF****）：</strong></li>
+</ol>
+<p>PACF 衡量了时间序列数据在给定滞后期之后的相关性，排除了中间阶段的相关性。PACF 在滞后 k 处的值表示时间序列在滞后 k 期的偏自相关性。其计算公式为：</p>
+<p>$PACF(k) &#x3D; \frac{Cov(Y_t - \hat{Y}<em>t, Y</em>{t-k} - \hat{Y}_{t-k})}{Var(Y_t - \hat{Y}_t)}$</p>
+<p>其中，$Y&#x3D;P_i$即品类 i 的月旬销量，而$Y_t$表示时间序列的值，即蔬菜品类 i 在月旬 t 的销量；$\hat{Y}_t$表示已经通过较低阶（1 至 k-1）的滞后期进行调整的值，$Cov$表示协方差，$Var$表示方差。</p>
+<p><img src="/static/JPMJbnjXboLaiWxbeDScXiWwn2f.png"><br><img src="/static/PX7ZbSen9oPBBwx90sQcXCazn5b.png"></p>
+<p>从上图 6.6、6.7 可以看出，PACF 在 5 阶后在 0 附近震荡，ACF 在 1 阶后衰减至 0，因此提出下列模型：</p>
+<ul>
+<li>ARMA(5,0)模型：即偏自相关图在滞后 5 阶之后缩小为 0，且自相关缩小至 0，则是一个阶层 p&#x3D;5 的自回归模型；</li>
+<li>ARMA(5,1)模型：即使得自相关和偏自相关在相应阶数都缩小至零，是一个混合模型。</li>
+</ul>
+<ol>
+<li><strong>模型选择（<strong><strong>AIC</strong></strong>和<strong><strong>BIC</strong></strong>）：</strong></li>
+</ol>
+<p>信息准则是用于评估模型拟合质量的指标，其中 AIC（赤池信息准则）和 BIC（贝叶斯信息准则）是常用的两种指标，本文主要采用最小化 BIC 来评估模型质量。其计算公式如下：</p>
+<p>$BIC &#x3D; -2 \ln(L) + p \ln(n)$</p>
+<p>本节中，需要选择恰当的模型自回归阶数 p 以及移动平均阶数 q（即 AR 和 MA 的阶数），这直接影响了模型的拟合效果和预测性能。因此本文计算了贝叶斯信息量（BIC），最终根据 BIC 最小化的原则，最终确定使用 ARMA(5,1)模型。</p>
+<ol>
+<li><strong>模型<strong><strong>的</strong></strong>训练<strong><strong>评价与预测</strong></strong>：</strong></li>
+</ol>
+<p>至此，ARIMA 模型的参数确定完成$（p&#x3D;5，d&#x3D;1，q&#x3D;1）$，之后我们使用历史销售数据通过一阶差分得出的时间序列来进行训练。模型的训练过程旨在拟合历史销售模式，并捕捉时间序列中的趋势、季节性和噪声成分。（由于预测值是完全基于已有数据，因此沿用符号$P_{i,j}$，而符号$\hat{P}_{i,j}$用于表示考虑了定价因素之后的预测值）</p>
+<p><img src="/static/Tin3bDiXao2c51xYnJwcnAYUnQf.png"><br><img src="/static/IMoObfaApo5jZjx7jgAcKQ11nje.png"></p>
+<p>绘制拟合图和残差图，可以看到，预测值与测试值变化趋势十分相符，模型优良；在完成对应蔬菜品类的模型训练与检验之后，进行未来一周（2023 年 7 月 1-7 日）的基础销量预测，结果如下表 6.1 所示：</p>
+<p><img src="/static/OUMQbtm7woQZclxpVCRc6CN0nnb.png"></p>
+<h2 id="基础价值估算"><a href="#基础价值估算" class="headerlink" title="基础价值估算"></a>基础价值估算</h2><p>基础价值的估算是为了确定每个蔬菜品类的参考价格，以便制定定价策略。在我们的研究中，考虑到蔬菜作为基本农产品，其价值（或价格）变化相对稳定，主要受到社会必要劳动时间的影响$^{[4]}$$^{[5]}$。所以蔬菜的价格虽然会受到社会供需关系的影响，使其在短期内波动；但由于其真实价值在社会生产力发展平稳发展的情况下变动不大，因此长期来看价格仍将保持稳定。</p>
+<p>考虑到一般情况下，初级农产品的价值不会突变，因此在拟合基础价值时，需要保证结果的可导性。又考虑到价值波动的周期性，本文最终采用低阶傅里叶方法进行拟合，其形式可以表示为：</p>
+<p>$$<br>\begin{aligned}Vbase_i(t) &amp;&#x3D; a_n \cos^n(wt) + b_n \sin^n(wt) + a_{n-1} \cos^{n-1}(wt) + b_{n-1} \sin^{n-1}(wt) +\ldots + a_1\cos(wt)\&amp;+b_1\sin(wt)+ a_0,~t \in [1,36]<br>\end{aligned}<br>$$</p>
+<p>其中，$Vbase_i(t)$表示品类 i 在月旬 t 的基础价值，$t$表示时间，$a_n,b_n$是多项式的系数,需要通过根据每种商品三年平均定价记录来确定。对数据进行拟合，拟合优度和得到的部分系数取值和如下表 6.2 所示：</p>
+<p><img src="/static/HjyUbKJdgonP7AxP7iEcn92hnng.png"></p>
+<p>篇幅原因，以销量最大的花叶类蔬菜为例，绘制拟合效果图如下：</p>
+<p><img src="/static/H1ZcbUEMkoTp3Wxd2yCcW4vwnPc.png"></p>
+<p><img src="/static/VzAabQUqSoDKjpxhq1VcZUnfnpe.png"></p>
+<p>可以观察到，90% 的预测边界即基本可以覆盖所有非离群的销量情况，拟合优度达到 0.805，拟合效果良好。</p>
+<h2 id="定价策略对销量的影响"><a href="#定价策略对销量的影响" class="headerlink" title="定价策略对销量的影响"></a>定价策略对销量的影响</h2><p>定价策略在蔬菜销售中起着关键作用，因为价格直接影响到购买者的决策。在我们的研究中，我们分析了不同定价策略对销售量的影响，以确定如何最大化商超的收益。</p>
+<p>一般来说，价格与销售量之间存在一定的负相关关系$^{[6]}$。当产品价格高于其实际价值时，购买客户自然会减少，导致销售量的降低以及最终利润的减少（如下图所示）。相反，当产品价格低于其基础价值时，购买客户可能会增加，但单位利润会减少。因此，在定价决策中需要平衡价格和销售量之间的关系，以最大化利润。</p>
+<p><img src="/static/ZUEIboE3yoR6aJxDZBRcwO8Ln6c.png"><br><img src="/static/DbtKbr2ZrorI3GxrtiScGhjenef.png"></p>
+<p><img src="/static/ZI4rbCfMNoJTKBxp8KUcuAGDnqe.png"><br><img src="/static/V5Vhb38b2oXm9DxNmIVch1OVn1d.png"></p>
+<p>我们通过$α &#x3D; \frac{S_{i,j}}{Vbase_i}$衡量定价与基础价值的相对大小，得到预计销量与定价的定量关系：$\hat{P}<em>{i,j}&#x3D; \delta_i\frac{P</em>{i,j}}$，α 越大，预计销量相比基础销量下降越多，其中$ \delta$是补偿系数。这种方法的优势在于它允许我们灵活地调整价格，以适应不同的市场条件，从而实现利润最大化。</p>
+<h2 id="打折售卖情况"><a href="#打折售卖情况" class="headerlink" title="打折售卖情况"></a>打折售卖情况</h2><p><img src="/static/WNIubeRCEomEvlxppxfc0f6bnBg.png"></p>
+<p>在完成了上述对于正常销售情况的讨论，接下来对于进货过多时商超打折销售的情况做出讨论。由上图可以得知，商超的打折策略不是一成不变的，使用 excel 计算折扣销量与折扣率的相关系数，值为负，因此本文考虑打折卖出的货物越多，折扣力度越大是合理的。综上所述，将打折售卖的部分建模为：</p>
+<p>$$<br>Pro_{discount}&#x3D;(\hat{B}<em>{i,j} - \hat{P}</em>{i,j})(DP_{i,j} - \hat{J}_{i,j})<br>$$</p>
+<p>即折扣利润为进货量减去基准销售量，乘以折扣价减去进价剩余的值。其中，$DP_{i,j}$为蔬菜品类$i$在第$j$天的折后价，其计算方式与基准销售量模型中的定价计算方式相同。</p>
+<h2 id="损耗率和预期进货量"><a href="#损耗率和预期进货量" class="headerlink" title="损耗率和预期进货量"></a>损耗率和预期进货量</h2><p>在上述三节得出了预期销售量之后，还需要根据各个蔬菜品种的损耗率来确定恰当的进货量，以满足销售需求。由于本问题考虑的是以品类为单位的进货量，因此，我们采用了品类内部各个品种的<strong>加权平均</strong>损耗率来评估品类的损耗率。这意味着不同品种的蔬菜对于品类的整体损耗率有不同的贡献，我们根据它们的销售量来赋予权重，保证销量大，进货多，损失多的单品对整体的影响大。这样，我们可以更准确地估计品类的损耗率。</p>
+<p>即：$LR_i&#x3D;\sum_{n\in Knum_i}{lr_n*{\dfrac{\hat{p}<em>{i,j}}{\sum\limits</em>{n\in Knum_i}{\hat{p}_{i,j}}}}}$</p>
+<p>其中$Knum_i$为品类 i 中的品种，$LR_i$为品类$i$的加权平均损耗率，$lr_n$为品种$n$的近期损耗率,$weight_n$为该品种在其品类损耗率中的权重。</p>
+<p>计算所得各品类的在 7 月 1 日这一周的参考损耗率为：</p>
+<p><img src="/static/H4SObkK87ox3tWxcrYocDadEnVe.png"></p>
+<p>在了解了品类的损耗率后，我们可以使用预期销量来估算预期进货量。预期进货量是确保货物供应和质量的关键因素，它需要考虑品类的销售需求以及损耗率，预期进货量可以通过以下公式来推算：</p>
+<p>$$<br>\hat{B}<em>{i,j}\ge \frac{\hat{P}</em>{i,j}}{1 -LR_i }<br>$$</p>
+<p>其中， $\hat{B}<em>{i,j}$为品类 i 在第 j 天的预期进货量，$\hat{P}</em>{i,j}$为预期销售量</p>
+<h2 id="模型汇总"><a href="#模型汇总" class="headerlink" title="模型汇总"></a>模型汇总</h2><p>决策变量：$S_{i,j}$，即蔬菜品类$i$在第$j$天的定价。</p>
+<ul>
+<li>由定价$S_{i,j}$结合基础销量与基础价值求得预期销量$\hat{P}_{i,j}$</li>
+<li>由预期销量及品类损失率$LR_i$得出应进货量$\hat{B}_{i,j}$</li>
+<li>得出若某品类预期销量全部售出，利润$Pro_{base}&#x3D;S_{i,j}\hat{P}<em>{i,j} - \hat{B}</em>{i,j} \hat{J}_{i,j}$</li>
+<li>折扣利润为$Pro_{discount}&#x3D; (\hat{B}<em>{i,j} - \hat{P}</em>{i,j})(DP_{i,j} - \hat{J}_{i,j})$</li>
+<li>共有六种品类，则最终的总利润为：$Pro_{base}+Pro_{discount}$</li>
+</ul>
+<p>综上所述，本问题目标函数如下：</p>
+<p>$$<br>\begin{aligned}<br>\mathop{max}\limits_{S_{i,j}}~<br>Pro&amp;&#x3D;<del>Pro_{base}+Pro_{discount}\<br>&amp;&#x3D;</del>\sum_{i&#x3D;1}^{6} {[(S_{i,j}\hat{P}<em>{i,j} - \hat{B}</em>{i,j} \hat{J}<em>{i,j})+(\hat{B}</em>{i,j} - \hat{P}<em>{i,j})(DP</em>{i,j} - \hat{J}<em>{i,j})]}\<br>s.t.\quad\quad\quad&amp;\hat{B}</em>{i,j} \in [\dfrac{1}{2}minH(p_{i,j}),\dfrac{3}{2}maxH(p_{i,j})]\<br>&amp; S_{i,j} \in [minH(s_{i,j}), \dfrac{3}{2}maxH(s_{i,j})]\<br>&amp; ~α &#x3D; \frac{S_{i,j}}{Vbase_i}\<br>&amp; \hat{P}<em>{i,j}&#x3D;\delta_i\dfrac{P</em>{i,j}}\<br>&amp; \hat{B}<em>{i,j}\ge\frac{\hat{P}</em>{i,j}}{1 -LR_i }\<br>&amp; <br>\end{aligned}<br>$$</p>
+<p>其中，$S_{i,j}$为算法需调整的决策变量，其余量均为前文根据已有数据计算或预测所得的值；函数 minH 及 maxH 为求变量的历史最小值和历史最大值。</p>
+<h2 id="模型求解"><a href="#模型求解" class="headerlink" title="模型求解"></a>模型求解</h2><p>当需要决策各品类的进货量及其定价以最大化利润时，可以将上述线性规划问题视为一个复杂的组合优化问题，因此可以采用启发式算法提高求解效率。在本研究中，我们使用遗传算法来寻找最优化的决策变量，即蔬菜品类的定价，以实现预期利润的最大化。</p>
+<p>遗传算法是一种基于自然原理的启发式算法，其本质是通过群体搜索技术，根据”适者生存”的原则，模拟自然选择、交叉和变异等操作来不断优化决策变量的组合，以找到最佳解。这一特性符合我们需要解决的最大化预期利润模型，因此采用遗传算法来求解该模型。</p>
+<p>遗传算法的一般流程包括生成初始种群、确定目标函数、执行交叉操作、变异操作和选择等若干步骤。其中关键部分如下：</p>
+<ol>
+<li><strong>初始化种群：</strong> 我们首先选取基础价值以及基础进货量（基础进货量即 6.4 节中根据 ARIMA 预测出的基础销量并结合损耗率所得出的结果，下同）作为初始决策变量（即六种品类的定价）。这些初始解构成了初始种群。</li>
+<li><strong>适应度****评估：</strong> 对于每个解（定价策略），我们使用 6.3 节建立的预期销售量模型来考虑进货策略；并基于此进货策略和定价策略，采用 6.5 节的利润目标函数来作为遗传算法进行适应度评估的基础。即问题分析时流程图中的此部分：</li>
+</ol>
+<p><img src="/static/EIdGbiZDioziXHxLkSvclQ1jn7X.png"></p>
+<ol>
+<li><strong>选择、交叉、变异、更新：</strong> 通过轮盘赌选择策略，本文按照适应度来选择父代解，适应度较高的解被选中的概率更大。之后采用经典的单点交叉 + 多点变异的方式生成新的子代解，并与父代解进行竞争，选择适应度更高的解来更新种群。</li>
+<li><strong>重复迭代：</strong> 以上步骤迭代多次。为了编程计算方便，对适应度取负号，做出适应度变化情况如下图 6.10 所示：</li>
+</ol>
+<p><img src="/static/MXGdbuqbwo6IBJxHs2WchT6xnqb.png"></p>
+<p>如图 6.10 所示，可以看出算法在 250 代左右基本找到了全局最优解，最优适应度达到了一个相对较高且稳定的区域。每一代种群的平均适应度在前 200 次进化中在迅速的提高，并且在第 300 代左右趋于平缓，在第 400 代之后，种群的最低及平均适应度都基本不再升高。</p>
+<p>同时，可以观察到图中在同一代时，最优个体与平均个体的适应度都相差不大，说明本文在进行遗传算法之前对于模型的化简处理比较有效，成功的降低了模型优化的复杂度，为准确率及运行时间的优化都做出了贡献。</p>
+<p>求得各品类在一周内每一天的补货量以及销售定价如表 6.3 所示</p>
+<p><img src="/static/E7lZbiGYyo2rfoxQiuFcBBo2n4d.png"></p>
+<h1 id="问题三的建模与解答"><a href="#问题三的建模与解答" class="headerlink" title="问题三的建模与解答"></a>问题三的建模与解答</h1><h2 id="模型的修改"><a href="#模型的修改" class="headerlink" title="模型的修改"></a>模型的修改</h2><p>对于基础销量估算，基础价值估算等优化模型中用到的固定参数求解，我们可以承接问题二中已经建立的模型和方法，包括基础销量和基础价值的估算以及定价策略对销量的影响。这些部分所采用的方法与问题二相同，只需要从原先使用品类的销量数据预测变为使用单个品种的销量数据预测即可，因此不再赘述。</p>
+<ol>
+<li><strong>进****货量下限的修改</strong><br>从问题一进货量在历史最小销售量的 0.5 倍和最大进货量的 1.5 倍之间取值，变为 2.5kg 到最大销售量 1.5 倍之间取值，即：</li>
+</ol>
+<p>$$<br>2.5kg\le min(\hat{b}<em>{i,j})\le \dfrac{3}{2}maxH(p</em>{i,j})<br>$$</p>
+<ol>
+<li><strong>选择变量的引入</strong></li>
+</ol>
+<p>定义 0-1 变量$select_i$表示对于 6 月 24 日到 6 月 30 日之间的蔬菜可售品种中，第 i 个品种的选择情况。0 表示不选择，1 表示选择。</p>
+<p>这一选择变量的引入，将原本不易处理的进货量为 0 以及进货量大于 2.5kg 的非连续情形转化，变为该变量直接与与进货量相乘即可表达“是否选择品种$i$”的含义，简化了模型的分类讨论情况。</p>
+<ol>
+<li><strong>市场需求约束</strong></li>
+</ol>
+<p>由题可知，为了尽可能满足市场对各品类蔬菜商品需求，应当使得品类中，各单品的订购量之和大于其预测的基础销量，约束条件如下所示：</p>
+<p>$$<br>\sum_{n \in Kind_i} {\hat{b}<em>{i,j}} \le P</em>{n,1}~, ~~\forall i \in [1,6]<br>$$</p>
+<p>其中$p_{i,j}$的$j$取 1 是由于仅预测一天的方案，因此表示第一天的预期销售量</p>
+<ol>
+<li><strong>单品数量约束</strong></li>
+</ol>
+<p>商超货架的摆放空间有限，选择进货的产品单品数量应该在 27 到 33 之间。由于本题采用了选择变量用于标识是否选择某品种，因此只需对选择变量求和，将其限制在该范围内即可。如下式：</p>
+<p>$$<br>27\le \sum_{i&#x3D;1}^{SK}{select_i} \le 33<br>$$</p>
+<ol>
+<li><strong>目标函数的修改</strong></li>
+</ol>
+<p>其目标利润如下式：</p>
+<p>$$<br>\sum_{i \in KS} [select_i *  \hat{p}<em>{i,j}(s</em>{i,j} - \hat{j}<em>{i,j})-select_i*\hat{b}</em>{i,j}lr_i\hat{j}_{i,j}]<br>$$</p>
+<h2 id="模型汇总-1"><a href="#模型汇总-1" class="headerlink" title="模型汇总"></a>模型汇总</h2><p>综上所述，第三问优化模型为：</p>
+<p>$$<br>\begin{aligned}<br>\mathop{max}\limits_{S_{i,j}}~<br>Pro&amp;&#x3D;<del>\sum_{i \in KS} [select_i *  \hat{p}<em>{i,j}(s</em>{i,j} - \hat{j}<em>{i,j})-select_i*\hat{b}</em>{i,j}lr_i\hat{j}<em>{i,j}]\<br>s.t.\quad\quad\quad&amp; ~2.5kg\le min(\hat{b}</em>{i,j})\le \dfrac{3}{2}maxH(p_{i,j})\<br>&amp; select_i \in {0,1}\<br>&amp; \sum_{n \in Kind_i} {\hat{b}<em>{i,j}} \le P</em>{n,1}</del>, ~~\forall i \in [1,6]\<br>&amp; 27\le \sum_{i&#x3D;1}^{SK}{select_i} \le 33 <br>\end{aligned}<br>$$</p>
+<h2 id="模型求解-1"><a href="#模型求解-1" class="headerlink" title="模型求解"></a>模型求解</h2><ol>
+<li>*<em>决策变量的</em><em><strong>挑选</strong></em>*： **</li>
+</ol>
+<p>为了满足问题三的需求，我们首先需要考虑在 6 月 24 日到 6 月 30 日之间的蔬菜可售品种。经过统计得出共有下表 7.1 中 49 种蔬菜售卖。</p>
+<p><img src="/static/AZ4ybK48ToOk6Mx0fOKcon1Qn9g.png"></p>
+<p>根据假设 3，这 49 种蔬菜的进货量，定价，以及选择变量共同构成了问题三的决策变量。</p>
+<ol>
+<li>*<em>求解结果以及效果分析</em>***： **</li>
+</ol>
+<p><img src="/static/Cv9pbCKTsoAn96xCsJ9c0bd4nqd.png"></p>
+<p>由于所用算法框架基于问题二，因此求解过程相差不大。在问题三中，图 7.2 与问题二的适应度图 6.3 进行对比，发现本题的遗传个体在全局最优、趋于趋于平缓、基本稳定的时刻均延迟大约 50~100 代，在超过第 500 代时才得到稳定的最优解个体。这一情况与上文修改模型时额外加入约束条件的情况符合，品种数目及进货量的选择自然为遗传算法的求解带来了额外的复杂度，但是因为有通过选择变量等方式进行优化，计算难度仍在可接受范围内。</p>
+<p>但本题模型也同样有不足之处，图中在 650 代左右最优个体的适应度突然出现明显下降，而种群平均值虽然也有降低趋势，但还是未能跟随收敛，可能是出现了约束条件难以跳出的局部最小值。</p>
+<p>解得七月一日应进货品种及其订货量、定价信息如下表所示：</p>
+<p><img src="/static/FjTSb08e2oswEPxOXg4cxehznhg.png"></p>
+<p>对于如“金针菇(盒)”等不能订货量为小数的商品，将其就近取整，最终所得结果如下表所示：</p>
+<p><img src="/static/KC8LbPW3xoRkcUxRkqocEdnQnZe.png"></p>
+<h1 id="问题四的分析与解答"><a href="#问题四的分析与解答" class="headerlink" title="问题四的分析与解答"></a>问题四的分析与解答</h1><p>在当今竞争激烈的蔬菜零售市场中，数据不仅仅是一种资源，更是制胜的利器。商超需要深入了解市场，以制定最佳的补货和定价策略。本问题探讨了哪些数据对于解决蔬菜商品管理问题至关重要。通过自然原料、市场竞争、供应链等多个方面的信息，商超可以更准确地预测市场趋势、满足消费者需求、优化定价策略，从而实现商超的最大化收益。</p>
+<p>本节综合查阅多领域文献，并做出具体到商超进货与定价这一实际问题的分析与实践建议。提出供六项可以在附件数据之外收集应用的指标，并将其归类为三大项，构建出适用于层次分析类方法的三级六类综合评价体系以供实践参考。</p>
+<p>如下图 1 所示，通过这样的分层结构，商超可以有序地收集、分析和利用各类数据，以更好地制定蔬菜商品的补货和定价决策，从而提高经营效益。</p>
+<p><img src="/static/MVogbzZSWo6QaHxSLL8cxTp4nhg.png"></p>
+<h2 id="自然原料："><a href="#自然原料：" class="headerlink" title="自然原料："></a><strong>自然原料：</strong></h2><h3 id="季节性变化"><a href="#季节性变化" class="headerlink" title="季节性变化"></a><strong>季节性变化</strong></h3><p>蔬菜销售存在季节性变化的主要原因可以追溯到气象条件和市场需求的双重影响。首先，气候条件在不同季节中发生变化，这直接影响了蔬菜的生长、产量和品质。例如，冬季的低温和较少的日照可能会降低蔬菜的生长速度，导致供应减少和价格上升。而在夏季，气温升高可能会催熟某些蔬菜，导致其上市时间集中，供应过剩，价格下降。因此，气候条件的季节性变化直接影响了蔬菜的产量，从而影响了其销售。$^{[7]}$</p>
+<p>其次，市场需求也在不同季节中发生变化。这与消费者的饮食习惯和需求有关。例如，在寒冷的冬季，人们通常更喜欢食用热量高的蔬菜，如根茎类，以满足身体的能量需求。而在炎热的夏季，清爽的叶菜类蔬菜更受欢迎。这种季节性需求变化会导致消费者购买不同类型的蔬菜，进而影响了销售。$^{[8]}$</p>
+<p>综上所述，蔬菜销售的季节性变化是由气象条件和市场需求的双重因素共同作用造成的。商超需要理解并适应这些季节性因素，了解不同蔬菜品种的生长季节，以灵活调整采购、定价和销售策略，以满足不同季节的市场需求，最大程度地提高销售效益。</p>
+<h3 id="蔬菜质量"><a href="#蔬菜质量" class="headerlink" title="蔬菜质量"></a><strong>蔬菜质量</strong></h3><p>蔬菜的质量毫无疑问是商超蔬菜经营中至关重要的因素之一。首先，蔬菜的外观直接影响客户的购买决策。顾客更愿意购买外观良好、新鲜、无损伤的蔬菜，因此商超需要确保所销售的蔬菜在这些方面达到高标准。而口感、营养等标准虽然不能直观感受，但是也直接的影响着“回头客”的比例。例如，在相关调查中，消费者对于有机蔬菜的口感、营养价值更加优秀的认可度均达到了 76.8% 以上，进而其对于质量更优秀的有机蔬菜的消费意愿程度也相对较高$^{[9]}$。但是对于实际购买量经过独立样本 T 检验，却体现出当前中国居民对于质量更优的蔬果产品（如有机蔬菜、无公害蔬菜等）的认可率由于其价格因素，只是略微积极，尚且不能达到认为存在明显购物意愿差距的显著性水平。因此营养等隐形因素相对而言不如外观因素的效益直接，并且国人对于此类隐性因素带来的蔬菜价格提高比较敏感，商超应当做出相应的取舍。</p>
+<p>其次，蔬菜的质量波动和损耗率会影响商超的经济效益。如果蔬菜的质量波动大，或者损耗率较高，商超将面临库存浪费和成本增加的问题（joint inventory and pricing problem，库存管理与联合定价问题）$^{[10]}$。因此，蔬菜质量的管理对于商超来说非常关键，它不仅影响着客户满意度，还直接关系到商超在库存等基础设施方面的盈利能力。</p>
+<h2 id="市场竞争："><a href="#市场竞争：" class="headerlink" title="市场竞争："></a><strong>市场竞争：</strong></h2><h3 id="市场需求"><a href="#市场需求" class="headerlink" title="市场需求"></a><strong>市场需求</strong></h3><p>市场需求数据可以像本文所做工作一样，帮助商超预测未来的销售趋势。通过时间序列分析和趋势预测，商超可以更准确地了解哪些蔬菜在未来可能会更畅销，从而做出更明智的补货决策。这有助于减少库存浪费和提高销售效益。</p>
+<p>而在此之外，市场需求分析范围更广，不仅仅是根据销售记录来分析，还包括了比如发放问卷、调研其他商超商品品类等一系列对于广大消费者的市场需求分析，以提供符合顾客口味和偏好的商品$^{[11]}$。例如最典型的，瓜类水果在夏季由于解暑需求明显更受欢迎，而在其他季节需求较低。商超需要根据这些趋势来调整商品组合，确保有足够的供应来满足高峰需求。这虽然是商业经营的基础工作，但是其重要性不可忽视。</p>
+<h3 id="顾客信息"><a href="#顾客信息" class="headerlink" title="顾客信息"></a><strong>顾客信息</strong></h3><p>顾客信息的收集、分析在商业经营中存在一定的灰色地带可能性，但是在合法范围内的正常分析工作也已经成为策略优化中的一部分。尤其是在近年来，人工智能领域的兴起使得用户画像、信息推送等应用方向飞速发展。商超虽然不是互联网企业，无法采用算法来推送消息，但是也可以采用朴素的顾客购买偏好、年龄、性别、职业等方面进行基础的分析。</p>
+<p>例如，年轻人可能更注重蔬菜的品质和口感，而老年人可能更关注价格。职业不同的消费者也可能有不同的购买习惯，比如忙碌的职业人可能只在周末购买食材，而家庭主妇的购买时间较为随意，更多的取决于商超的折扣活动时间。通过综合分析这些购买偏好和人口统计信息，商超可以更精确地了解不同消费者群体的需求。</p>
+<h2 id="供应链："><a href="#供应链：" class="headerlink" title="供应链："></a><strong>供应链：</strong></h2><h3 id="供应链分析"><a href="#供应链分析" class="headerlink" title="供应链分析"></a><strong>供应链分析</strong></h3><p>Seuring 和 Muller(2008) $^{[12]}$提出，供应链是指从原材料的生产、加工、加工、运输、运输、销售等过程中产生的一系列环节和问题，其在蔬菜商品管理中的关键作用体现在蔬菜来源的稳定性上：</p>
+<p>商超需要准确了解蔬菜商品的供应链情况。这包括了解供应商的交付时间、库存水平和质量控制。通过跟踪供应链数据，商超可以确保蔬菜的及时交付，避免供应短缺或过剩$^{[13]}$。即，在本题前三问完成了进货量的分析之后，商超还要保证订货源头不出意外，包括缺货、延迟交付等多种不利情况，否则即便做出完美的采购规划也难以实现。此外，质量控制也是关键因素，商超应当及时检查供应商交付的蔬菜产品情况，确保符合质量标准，维护自身信誉口碑，进而赢得更多顾客。</p>
+<h3 id="商品信息"><a href="#商品信息" class="headerlink" title="商品信息"></a><strong>商品信息</strong></h3><p>商品信息都收集与处理在供应链分析中扮演着至关重要的角色，它不仅涉及库存控制，还关系到供应链管理、产品质量、成本控制以及市场竞争力。良好的商品信息收集处理机制可以为商家提供长远的发展前景$^{[13]}$，为此，可以从以下几个方面去完善：</p>
+<ol>
+<li>供应商选择：商品信息中包括供应商的信息，如产地、供货周期、质量等。商超可以通过分析这些信息来选择最合适的供应商。例如，了解供应商的产地和质量记录有助于商超选择蔬果原产地的高品质供货商，避免采购出现“橘生淮北为枳”的情况。</li>
+<li>供应链透明度：商品信息的记录和分析提高了供应链的透明度。商超可以实时了解商品的来源、质量、价格和供应情况，从而更好地应对供应链中的问题和挑战。这有助于提高供应链的可视性，减少潜在的风险。</li>
+<li>成本控制：通过商品信息的分析，商超可以选择更加适宜的供货商，以控制采购成本。了解不同批次的商品成本和质量情况，有助于商超做出更明智的采购决策，达成降本增效的成果。</li>
+</ol>
+<h1 id="模型的评价与改进"><a href="#模型的评价与改进" class="headerlink" title="模型的评价与改进"></a>模型的评价与改进</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ol>
+<li>对于进货量-定价-销售量三者关系的分析中，切实考虑到了社会经济学原理，结合了农产品的价值稳定性和供需关系综合预测，没有脱离实际来空谈模型的预测。</li>
+<li>使用改进的皮尔逊相关系数算法，不受偶然因素影响。</li>
+<li>对于第四问给出的建议指标，考虑方面完善：从实际的商品质量，到社科的顾客信息，再到经济学的市场竞争与供应链均有所考虑，并将其整理为适宜建模运用的形式，实用性强。</li>
+</ol>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ol>
+<li>第一问中对于强相关的蔬菜单品未进行聚类分析。</li>
+<li>对折扣销售建模时，未基于一天中顾客的购买时间分布进行动态的打折，也未考虑对于额外货量打折销售的方式是否会引诱人们非正常购买（即专门等到商超不得不打折后进行哄抢）。</li>
+<li>第三问遗传算法求解的结果中，出现了种群均值与个体最优值的脱离，虽然也能够采用最优个体正确地给出进货与定价策略，但是可能仍然隐含的表示出模型的约束条件可以进一步改良。</li>
+</ol>
+<h2 id="改进"><a href="#改进" class="headerlink" title="改进"></a>改进</h2><ol>
+<li>对于相关度较高的蔬菜品种采用 k-means 等聚类方法并求和，之后再进行分析。</li>
+<li>打折价格在一天中是固定设置的，可以考虑采用根据时间和剩余蔬菜量灵活调整的方式。</li>
+<li>采用多种优化模型对比分析。</li>
+</ol>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>$$<br>[1]谢春芹,贾君,谢正林,等. 两种食用菌季节性栽培套种技术[J]. 食用菌,2011(4):37-39. DOI:10.3969&#x2F;j.issn.1000-8357.2011.04.026.<br>$$</p>
+<p>$$<br>[2]陈建明,张珏锋,钟海英,等. 影响茭白产量和采收时间的因素分析[J]. 浙江农业科学,2016,57(10):1629-1632. DOI:10.16178&#x2F;j.issn.0528-9017.20161018.<br>$$</p>
+<p>$$<br>[3]吕旺.基于改进SVM的生鲜蔬菜销量趋势预测研究[D].安徽农业大学.2021.<br>$$</p>
+<p>$$<br>[4]李靓.基于产业链视角的蔬菜价格形成研究[D].中国农业大学,2018.<br>$$</p>
+<p>$$<br>[5]孟猛,代昆豪,王杏,路靖.国内农产品价格形成机制研究综述[J].热带农业科学,2022,42(07):116-123.<br>$$</p>
+<p>$$<br>[6]毛莉莎.供应链视角下蔬菜批发市场定价策略及产销模式研究[D].中南林业科技大学,2022.<br>$$</p>
+<p>$$<br>[7]孙倩,穆月英.蔬菜价格变动、影响因素及价格预测——以北京市批发市场为例[J].中国蔬菜,2011,(09):9-14.DOI:10.19928&#x2F;j.cnki.1000-6346.2011.09.002<br>$$</p>
+<p>$$<br>[8]张晶,刘继芳,周向阳,等. 2022年蔬菜市场形势分析与2023年展望[J]. 中国蔬菜,2023(1):1-6. DOI:10.19928&#x2F;j.cnki.1000-6346.2023.1004.<br>$$</p>
+<p>$$<br>[9]周华.消费者有机蔬菜购买意愿与购买行为研究[D].东北农业大学,2019.<br>$$</p>
+<p>$$<br>[10]刘恒宇.果蔬产品库存、生产与销售策略研究[D].北京交通大学,2019.<br>$$</p>
+<p>$$<br>[11]罗超平,王钊.波动频率、季节性上涨与蔬菜价格演进机理:1978～2010年[J].改革,2012,(05):94-100.<br>$$</p>
+<p>$$<br>[12]StefanSeuring.martinMuller.~~~From<del>a</del>literature<del>review</del>to<del>a</del>conceptual<del>framework</del>for<del>\sustainable</del>supply<del>chain</del>management.<del>Joumal</del>of<del>Cleaner</del>[J]Production16(2008)1699-1710.<br>$$</p>
+<p>$$<br>13]于涛.供应链环境下的精品超市采购管理与优化研究[D].天津大学,2016.<br>$$</p>
+<h2 id="关键代码"><a href="#关键代码" class="headerlink" title="关键代码"></a>关键代码</h2><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%%%%%问题二，ARIMA预测%%%%%%%%%%%%%</span></span><br><span class="line"><span class="comment">%%%%%%%ARIMA预测六大类7.1-7.7七天的销售量</span></span><br><span class="line"> load(<span class="string">&#x27;data_ARIMA.mat&#x27;</span>);</span><br><span class="line">XSL6=<span class="built_in">zeros</span>(<span class="number">7</span>,<span class="number">6</span>);</span><br><span class="line"><span class="comment">%按花叶，花菜，水生，茄，辣椒，食用菌的顺序</span></span><br><span class="line">XSL6(:,<span class="number">1</span>)=modelTimeSeries(data_A);</span><br><span class="line">XSL6(:,<span class="number">2</span>)=modelTimeSeries(data_B);</span><br><span class="line">XSL6(:,<span class="number">3</span>)=modelTimeSeries(data_C);</span><br><span class="line">XSL6(:,<span class="number">4</span>)=modelTimeSeries(data_D);</span><br><span class="line">XSL6(:,<span class="number">5</span>)=modelTimeSeries(data_E);</span><br><span class="line">XSL6(:,<span class="number">6</span>)=modelTimeSeries(data_F);</span><br><span class="line"></span><br><span class="line"><span class="comment">%画图同时预测</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">auto_fore</span> = <span class="title">modelTimeSeries</span><span class="params">(Untitled1)</span></span></span><br><span class="line">VarName2 = Untitled1.VarName2;</span><br><span class="line">ARIMA_VarName2 = arima(<span class="string">&#x27;Constant&#x27;</span>,NaN,<span class="string">&#x27;ARLags&#x27;</span>,<span class="number">1</span>:<span class="number">5</span>,<span class="string">&#x27;D&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;MALags&#x27;</span>,<span class="number">1</span>,<span class="string">&#x27;Distribution&#x27;</span>,<span class="string">&#x27;Gaussian&#x27;</span>);</span><br><span class="line">ARIMA_VarName2 = estimate(ARIMA_VarName2,VarName2,<span class="string">&#x27;Display&#x27;</span>,<span class="string">&#x27;off&#x27;</span>);</span><br><span class="line">createfigure(table2array(Untitled1(:,<span class="number">2</span>)));</span><br><span class="line">step = <span class="number">7</span>;</span><br><span class="line">auto_fore = forecast(ARIMA_VarName2,step,<span class="string">&#x27;Y0&#x27;</span>,table2array(Untitled1(:,<span class="number">2</span>)));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%画图函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createfigure</span><span class="params">(YMatrix1)</span></span></span><br><span class="line"><span class="comment">%CREATEFIGURE(YMatrix1, YMatrix2)</span></span><br><span class="line"><span class="comment">%  YMATRIX1:  plot y 数据的矩阵</span></span><br><span class="line"><span class="comment">% 创建 figure</span></span><br><span class="line">figure1 = <span class="built_in">figure</span>;</span><br><span class="line"><span class="comment">% 创建 subplot</span></span><br><span class="line">subplot1 = subplot(<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="string">&#x27;Parent&#x27;</span>,figure1);</span><br><span class="line"><span class="built_in">hold</span>(subplot1,<span class="string">&#x27;on&#x27;</span>);</span><br><span class="line"><span class="comment">% 使用 plot 的矩阵输入创建多个 line 对象</span></span><br><span class="line">plot1 = <span class="built_in">plot</span>(YMatrix1,<span class="string">&#x27;Parent&#x27;</span>,subplot1);</span><br><span class="line">set(plot1(<span class="number">1</span>),<span class="string">&#x27;DisplayName&#x27;</span>,<span class="string">&#x27;VarName2&#x27;</span>);</span><br><span class="line"><span class="comment">% 创建 datatip</span></span><br><span class="line">datatip(plot1(<span class="number">1</span>),<span class="string">&#x27;DataIndex&#x27;</span>,<span class="number">12</span>);</span><br><span class="line"><span class="comment">% 创建 xlabel</span></span><br><span class="line">xlabel(<span class="string">&#x27;Index&#x27;</span>);</span><br><span class="line"><span class="comment">% 创建 title</span></span><br><span class="line">title(<span class="string">&#x27;Model Fit&#x27;</span>);</span><br><span class="line">box(subplot1,<span class="string">&#x27;on&#x27;</span>);</span><br><span class="line"><span class="built_in">hold</span>(subplot1,<span class="string">&#x27;off&#x27;</span>);</span><br><span class="line"><span class="comment">% 创建 legend</span></span><br><span class="line">legend1 = <span class="built_in">legend</span>(subplot1,<span class="string">&#x27;show&#x27;</span>);</span><br><span class="line">set(legend1,<span class="string">&#x27;Interpreter&#x27;</span>,<span class="string">&#x27;none&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%%%%%%%问题二，傅里叶拟合%%%%%%%%%</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[fitresult, gof]</span> = <span class="title">createFit</span><span class="params">(X_mean, mean_C_365)</span></span></span><br><span class="line">[xData, yData] = prepareCurveData( X_mean, mean_C_365 );</span><br><span class="line"><span class="comment">% 设置 fittype 和选项。</span></span><br><span class="line">ft = fittype( <span class="string">&#x27;fourier7&#x27;</span> );</span><br><span class="line">opts = fitoptions( <span class="string">&#x27;Method&#x27;</span>, <span class="string">&#x27;NonlinearLeastSquares&#x27;</span> );</span><br><span class="line">opts.Display = <span class="string">&#x27;Off&#x27;</span>;</span><br><span class="line">opts.StartPoint = [<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">0.0172614980966472</span>];</span><br><span class="line"><span class="comment">% 对数据进行模型拟合。</span></span><br><span class="line">[fitresult, gof] = fit( xData, yData, ft, opts );</span><br><span class="line"><span class="comment">% 绘制数据拟合图。</span></span><br><span class="line"><span class="built_in">figure</span>( <span class="string">&#x27;Name&#x27;</span>, <span class="string">&#x27;无标题拟合 1&#x27;</span> );</span><br><span class="line">h = <span class="built_in">plot</span>( fitresult, xData, yData );</span><br><span class="line"><span class="built_in">legend</span>( h, <span class="string">&#x27;mean_C_365 vs. X_mean&#x27;</span>, <span class="string">&#x27;无标题拟合 1&#x27;</span>, <span class="string">&#x27;Location&#x27;</span>, <span class="string">&#x27;NorthEast&#x27;</span>, <span class="string">&#x27;Interpreter&#x27;</span>, <span class="string">&#x27;none&#x27;</span> );</span><br><span class="line"><span class="comment">% 为坐标区加标签</span></span><br><span class="line">xlabel( <span class="string">&#x27;X_mean&#x27;</span>, <span class="string">&#x27;Interpreter&#x27;</span>, <span class="string">&#x27;none&#x27;</span> );</span><br><span class="line">ylabel( <span class="string">&#x27;mean_C_365&#x27;</span>, <span class="string">&#x27;Interpreter&#x27;</span>, <span class="string">&#x27;none&#x27;</span> );</span><br><span class="line">grid on</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%%%%%%%问题二，遗传算法求解%%%%%%%%%</span></span><br><span class="line"><span class="comment">%所需参量储存在question2_YCSF_workplace</span></span><br><span class="line">load(<span class="string">&#x27;question2_YCSF_workplace.mat&#x27;</span>);</span><br><span class="line"><span class="comment">%solution前6是进货量，后6是定价</span></span><br><span class="line">num=<span class="number">12</span>;</span><br><span class="line"><span class="comment">%%%%%%%%%%%计算7月1日的解——————solution1%%%%%%%%%%</span></span><br><span class="line"><span class="comment">% 将固定参数传递给 objfun</span></span><br><span class="line">objfun7 = @(optimInput)objectiveFcn_ques2(optimInput,P_jin_6,JCL6_1,J_6);</span><br><span class="line"><span class="comment">% 将固定参数传递给 confun</span></span><br><span class="line">confun7 = @(optimInput)constraintFcn_ques2(optimInput,JCL6_1,J_6,SHL_6);</span><br><span class="line"><span class="comment">% 设置非默认求解器选项</span></span><br><span class="line">options7 = optimoptions(<span class="string">&quot;ga&quot;</span>,<span class="string">&quot;Display&quot;</span>,<span class="string">&quot;iter&quot;</span>);</span><br><span class="line"><span class="comment">% 求解</span></span><br><span class="line">[solution1,objectiveValue1] = ga(objfun7,num,[],[],[],[],<span class="built_in">repmat</span>(-Inf,num,<span class="number">1</span>),...</span><br><span class="line">    x_max_6,confun7,[],options7);</span><br><span class="line"><span class="comment">% 清除变量</span></span><br><span class="line">clearvars objfun7 confun7 options7</span><br><span class="line"><span class="comment">%%%其他日期代码大致相同，故略%%%%%%%%%%%</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%%%%问题二遗传算法的目标函数%%%%%%%%%%%%</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span> = <span class="title">objectiveFcn_ques2</span><span class="params">(optimInput,P_jin,JCL,JCJ)</span></span></span><br><span class="line"><span class="comment">%optimInput前6是订货量，后6是定价</span></span><br><span class="line"><span class="comment">%P_jin是进价</span></span><br><span class="line"><span class="comment">%JCL是销量</span></span><br><span class="line"><span class="comment">%JCJ是平均价值</span></span><br><span class="line"><span class="comment">%SXL实销量=基础量*基础价/定价</span></span><br><span class="line">SXL=<span class="built_in">zeros</span>(<span class="number">6</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">6</span></span><br><span class="line">        SXL(<span class="built_in">i</span>)=JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>)/optimInput(<span class="number">6</span>+<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%ZHJ 折后价=（基础量*基础价）/进货量</span></span><br><span class="line">ZHJ=<span class="built_in">zeros</span>(<span class="number">6</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">6</span></span><br><span class="line">        ZHJ(<span class="built_in">i</span>)=(JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>))/optimInput(<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span><br><span class="line">ff=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">6</span></span><br><span class="line"><span class="comment">%f1=销量*（定价-进价）</span></span><br><span class="line">    <span class="keyword">if</span> SXL(<span class="built_in">i</span>)&lt;=optimInput(<span class="built_in">i</span>)</span><br><span class="line">    f1 = SXL(<span class="built_in">i</span>)*(optimInput(<span class="number">6</span>+<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">     f1 = optimInput(<span class="built_in">i</span>)*(optimInput(<span class="number">6</span>+<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">% %f2=损耗量*进价 </span></span><br><span class="line"><span class="comment">% f2 = optimInput(i)*P_jin(i)*SHL(i)*0.01;</span></span><br><span class="line"><span class="comment">%f3=（进货量-销量）*（折后价-进价）</span></span><br><span class="line">f3 = (optimInput(<span class="built_in">i</span>)-SXL(<span class="built_in">i</span>))*(ZHJ(<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    </span><br><span class="line"><span class="comment">%a 系数=3/（进量-实销量+3）</span></span><br><span class="line">a=<span class="number">3</span>/(optimInput(<span class="built_in">i</span>)-SXL(<span class="built_in">i</span>)+<span class="number">3</span>);</span><br><span class="line">ff=a*(f1+f3)+ff;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="comment">%取MAX</span></span><br><span class="line">f=-ff;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%%%%%问题二遗传算法的约束函数%%%%%%%%%%%%%%</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[c,ceq]</span> = <span class="title">constraintFcn_ques2</span><span class="params">(optimInput,JCL,JCJ,SHL)</span></span></span><br><span class="line">ceq = [];</span><br><span class="line"><span class="comment">%SXL实销量=基础量*基础价/定价</span></span><br><span class="line">SXL=<span class="built_in">zeros</span>(<span class="number">6</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">6</span></span><br><span class="line">        SXL(<span class="built_in">i</span>)=JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>)/optimInput(<span class="number">6</span>+<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%订货量&gt;=实销量</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">6</span></span><br><span class="line">    c(<span class="built_in">i</span>)=-(optimInput(<span class="built_in">i</span>)-SXL(<span class="built_in">i</span>)/(<span class="number">1</span>-SHL(<span class="built_in">i</span>)*<span class="number">0.01</span>));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">%%%%%%%%%问题三，遗传算法求解%%%%%%%%%</span></span><br><span class="line"><span class="comment">%所需参量储存在question3_YCSF_workplace</span></span><br><span class="line">load(<span class="string">&#x27;question3_YCSF_workplace.mat&#x27;</span>);</span><br><span class="line"><span class="comment">%solution前49项是0/1决定系数，中间49项是订货量，后49项是定价</span></span><br><span class="line">num=<span class="number">49</span>*<span class="number">3</span>;</span><br><span class="line">num_zheng=<span class="number">1</span>:<span class="number">49</span>;</span><br><span class="line"><span class="comment">% P_jin：P_jin_49进货价</span></span><br><span class="line"><span class="comment">% 将固定参数传递给 objfun</span></span><br><span class="line">objfun4 = @(optimInput)objectiveFcn_ques3(optimInput,P_jin_49,XL_49,J_49);</span><br><span class="line"><span class="comment">% 将固定参数传递给 confun</span></span><br><span class="line">confun4 = @(optimInput)constraintFcn_ques3(optimInput,XQ,data_49_6,XL_49,J_49,...</span><br><span class="line">    data_49_ques3_SHL);</span><br><span class="line"><span class="comment">% 设置非默认求解器选项</span></span><br><span class="line">options4 = optimoptions(<span class="string">&quot;ga&quot;</span>,<span class="string">&quot;MaxGenerations&quot;</span>,<span class="number">2000</span>,<span class="string">&quot;Display&quot;</span>,<span class="string">&quot;iter&quot;</span>,<span class="string">&quot;PlotFcn&quot;</span>,...</span><br><span class="line">    <span class="string">&quot;gaplotbestf&quot;</span>);</span><br><span class="line"><span class="comment">% 求解</span></span><br><span class="line">[solution,objectiveValue] = ga(objfun4,num,[],[],[],[],x_min_49,x_max_49,...</span><br><span class="line">    confun4,num_zheng,options4);</span><br><span class="line"><span class="comment">% 清除变量</span></span><br><span class="line">clearvars objfun4 confun4 options4</span><br><span class="line"></span><br><span class="line"><span class="comment">%%%问题三遗传算法的目标函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span> = <span class="title">objectiveFcn_ques3</span><span class="params">(optimInput,P_jin,JCL,JCJ)</span></span></span><br><span class="line"><span class="comment">%P_jin是进价</span></span><br><span class="line"><span class="comment">%JCL是销量</span></span><br><span class="line"><span class="comment">%SHL是损耗率</span></span><br><span class="line"><span class="comment">%JCJ是平均价值</span></span><br><span class="line"> <span class="comment">%optimInput前49是决策系数，中49是订货量，后49是定价</span></span><br><span class="line"><span class="comment">%SXL实销量=基础量*基础价/定价</span></span><br><span class="line">SXL=<span class="built_in">zeros</span>(<span class="number">49</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line">        SXL(<span class="built_in">i</span>)=JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>)/optimInput(<span class="number">98</span>+<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%ZHJ 折后价=（基础量*基础价）/进货量</span></span><br><span class="line">ZHJ=<span class="built_in">zeros</span>(<span class="number">49</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line">        ZHJ(<span class="built_in">i</span>)=(JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>))/optimInput(<span class="built_in">i</span>+<span class="number">49</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span></span><br><span class="line">ff=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line"><span class="comment">%f1=销量*（定价-进价）</span></span><br><span class="line">    <span class="keyword">if</span> SXL(<span class="built_in">i</span>)&lt;=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)</span><br><span class="line">    f1 = SXL(<span class="built_in">i</span>)*(optimInput(<span class="number">98</span>+<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">     f1 = optimInput(<span class="built_in">i</span>+<span class="number">49</span>)*(optimInput(<span class="number">98</span>+<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">% %f2=损耗量*进价 </span></span><br><span class="line"><span class="comment">% f2 = optimInput(i+49)*P_jin(i)*SHL(i)*0.01;</span></span><br><span class="line"><span class="comment">%f3=（进货量-销量）*（折后价-进价）</span></span><br><span class="line">f3 = (optimInput(<span class="built_in">i</span>+<span class="number">49</span>)-SXL(<span class="built_in">i</span>))*(ZHJ(<span class="built_in">i</span>)-P_jin(<span class="built_in">i</span>));</span><br><span class="line">    </span><br><span class="line"><span class="comment">%a 系数=3/（进量-实销量+3）</span></span><br><span class="line">a=<span class="number">3</span>/(optimInput(<span class="built_in">i</span>+<span class="number">49</span>)-SXL(<span class="built_in">i</span>)+<span class="number">3</span>);</span><br><span class="line">ff=optimInput(<span class="built_in">i</span>)*a*(f1+f3)+ff;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="comment">%取MAX</span></span><br><span class="line">f=-ff;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%%问题三遗传算法的约束函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[c,ceq]</span> = <span class="title">constraintFcn_ques3</span><span class="params">(optimInput,XQ,data_49_6,JCL,JCJ,SHL)</span></span></span><br><span class="line"><span class="comment">%XQ是6大类市场的需求量</span></span><br><span class="line"><span class="comment">%data_49_6是49种单品的品类代码</span></span><br><span class="line"><span class="comment">%SXL实销量=基础量*基础价/定价</span></span><br><span class="line">SXL=<span class="built_in">zeros</span>(<span class="number">49</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line">        SXL(<span class="built_in">i</span>)=JCL(<span class="built_in">i</span>)*JCJ(<span class="built_in">i</span>)/optimInput(<span class="number">98</span>+<span class="built_in">i</span>);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">ceq = [];</span><br><span class="line">f1=<span class="number">0</span>;</span><br><span class="line">f2=<span class="number">0</span>;</span><br><span class="line">f3=<span class="number">0</span>;</span><br><span class="line">f4=<span class="number">0</span>;</span><br><span class="line">f5=<span class="number">0</span>;</span><br><span class="line">f6=<span class="number">0</span>;</span><br><span class="line"><span class="comment">%可售单品总数控制在 27-33 个</span></span><br><span class="line">c(<span class="number">1</span>)=sum(optimInput(<span class="number">1</span>:<span class="number">49</span>))<span class="number">-33</span>;</span><br><span class="line">c(<span class="number">2</span>)=-(sum(optimInput(<span class="number">1</span>:<span class="number">49</span>))<span class="number">-27</span>);</span><br><span class="line"><span class="comment">%满足市场对各品类蔬菜商品需求</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line">    <span class="comment">%花叶</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010101</span></span><br><span class="line">    f1=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f1;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%花菜</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010201</span></span><br><span class="line">    f2=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f2;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%水生</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010402</span></span><br><span class="line">    f3=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f3;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%茄</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010501</span></span><br><span class="line">    f4=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f4;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%辣椒</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010504</span></span><br><span class="line">    f5=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f5;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="comment">%食用菌</span></span><br><span class="line">    <span class="keyword">if</span> data_49_6(<span class="built_in">i</span>)==<span class="number">1011010801</span></span><br><span class="line">    f6=optimInput(<span class="built_in">i</span>+<span class="number">49</span>)+f6;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">c(<span class="number">3</span>)=-(f1-XQ(<span class="number">1</span>));</span><br><span class="line">c(<span class="number">4</span>)=-(f2-XQ(<span class="number">2</span>));</span><br><span class="line">c(<span class="number">5</span>)=-(f3-XQ(<span class="number">3</span>));</span><br><span class="line">c(<span class="number">6</span>)=-(f4-XQ(<span class="number">4</span>));</span><br><span class="line">c(<span class="number">7</span>)=-(f5-XQ(<span class="number">5</span>));</span><br><span class="line">c(<span class="number">8</span>)=-(f6-XQ(<span class="number">6</span>));</span><br><span class="line"><span class="comment">%订货量&gt;=实销量</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:<span class="number">49</span></span><br><span class="line">    c(<span class="built_in">i</span>+<span class="number">8</span>)=-(optimInput(<span class="built_in">i</span>+<span class="number">49</span>)-SXL(<span class="built_in">i</span>)/(<span class="number">1</span>-SHL(<span class="built_in">i</span>)*<span class="number">0.01</span>));</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="支撑材料目录"><a href="#支撑材料目录" class="headerlink" title="支撑材料目录"></a>支撑材料目录</h2><p>运行前必看.txt</p>
+<p>ARIMA.m</p>
+<p>constraintFcn_ques2.m</p>
+<p>constraintFcn_ques3.m</p>
+<p>createfigure.m</p>
+<p>createFit.m</p>
+<p>data_ARIMA.mat</p>
+<p>data_new.mat</p>
+<p>data_mean_FLY.mat</p>
+<p>day_xiaoshouliang_6.m</p>
+<p>FLY.m</p>
+<p>do_data_excel.m</p>
+<p>do_data_excel_PL.m</p>
+<p>draw.m</p>
+<p>draw_EXCEL.m</p>
+<p>modelTimeSeries.m</p>
+<p>need_ques3.m</p>
+<p>need_ques3_2.m</p>
+<p>objectiveFcn_ques2.m</p>
+<p>objectiveFcn_ques3.m</p>
+<p>question2.m</p>
+<p>question2_YCSF_workplace.mat</p>
+<p>question3.m</p>
+<p>question3_YCSF_workplace.mat</p>
+<p>solve_ARIMA.m</p>
+<p>solve_JCJ.m</p>
+<p>solve_SHL_6.m</p>
+<p>workplace.m</p>
+<p>月旬-单品-销售</p>
+<p>月旬-品类-销售</p>
+<p>每日-单品-数据</p>
+<p>每日-品类-销售</p>
+<p>重叠月旬相关性分析与符合条件所有单品对相关性</p>
+<p>相关性大于 0.95 单品.xlsx</p>
+<p>相关性小于-0.95 单品.xlsx</p>
+<h2 id="中间结果图表"><a href="#中间结果图表" class="headerlink" title="中间结果图表"></a>中间结果图表</h2><p>6.3 节 拟合全部系数取值</p>
+<p><img src="/static/KhunblZg3ogoSkxPDnPcKTjknPe.png"></p>
+<p>6.3 节 全部拟合效果图</p>
+<p>花叶类</p>
+<p><img src="/static/Nh9zbbN1IoCcUBxABnQcaFjcnbg.png"></p>
+<p><img src="/static/PrW0beyRIoqlRDxoGBJcS5p9nQH.png"></p>
+<p><img src="/static/TckNbIBx7oNFx6xTukEcT5TSnSg.png"></p>
+<p><img src="/static/VqeAbGHydox0JyxMq7bcs82tnhg.png"></p>
+<p>花菜类</p>
+<p><img src="/static/AjD3brxN6orfsJx8pJ2crI1Bnjf.png"></p>
+<p><img src="/static/WuRdbEzvmoHyPWxGjClc5NQPnVc.png"></p>
+<p><img src="/static/K6E3baa8Ro7A4RxZqPcceVYAnOf.png"></p>
+<p><img src="/static/X8gZbjWMBoF9bSxpY0QcehTHnZg.png"></p>
+<p>水生根茎类</p>
+<p><img src="/static/UQgcbjqUkoaAOJxHgt0cRDoVnEd.png"></p>
+<p><img src="/static/WVZHbsZB5ooHeGxZAxzcO41Fnkg.png"></p>
+<p><img src="/static/U5qNbsjlmobCQzxYxILc0hiwnqg.png"></p>
+<p><img src="/static/OW6mbtUepoTErbxRuvZc0cGWncd.png"></p>
+<p>茄类</p>
+<p><img src="/static/BNqybJYpNodFmMxA1EwcinUHn4f.png"></p>
+<p><img src="/static/MyZpbypFQo7af3x8ATnc3RO2nLe.png"></p>
+<p><img src="/static/ZsOZbHvrFo7goJx5cDJcIFjHnOh.png"></p>
+<p>辣椒类</p>
+<p><img src="/static/VsBkbrH8Do1V3Sx1ke2clkjrnqc.png"></p>
+<p><img src="/static/Hm87bSHO6oWcfxxNwCVcUXgsnld.png"></p>
+<p><img src="/static/ZSOTbbA5toiYO8xRTUUcYEnCnYb.png"></p>
+<p><img src="/static/DbpTbkXBMojw4Gxs2Odc4Yjlnnh.png"></p>
+<p>食用菌类</p>
+<p><img src="/static/VqMqbiIZ8oMq7Sxd7OuceyyenGb.png"></p>
+<p><img src="/static/AqNub9MeyoE8kKxGKhXcs9E0nrl.png"></p>
+<p><img src="/static/VX8zbYoZ0ofEhZx9hmYc6HYfnGc.png"></p>
+<p><img src="/static/PKXlbCzJfoDteHx66HqckghTnjc.png"></p>
+<p>6.8 节  问题二模型求解 7 月 1 日到 7 月 7 日全部解</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r=""
+        data-o=""
+        data-a=""
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
