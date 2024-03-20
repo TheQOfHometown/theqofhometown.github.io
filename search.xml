@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>创建个人博客，记录一下</title>
+    <url>/2024/03/04/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/</url>
+    <content><![CDATA[<p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
+<p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
+<p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
+<p>4.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+]]></content>
+      <categories>
+        <category>分类1</category>
+        <category>分类2</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
+  </entry>
+</search>
