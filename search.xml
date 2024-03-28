@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>创建个人博客，记录一下</title>
+    <title>python与剪映的联动</title>
     <url>/2024/03/04/python%E4%B8%8E%E5%89%AA%E6%98%A0%E7%9A%84%E8%81%94%E5%8A%A8/</url>
-    <content><![CDATA[<p>**友情链接<br>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a> 介绍了剪映草稿所需的两个json文件</p>
+    <content><![CDATA[<p>**友情链接<br>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a> 介绍了剪映草稿所需的两个json文件（draft_content.json和draft_meta_info.json）</p>
+<p>**代码部分<br>*1.本人电脑剪映草稿位置：<br>    C:\Users\86159\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft</p>
 ]]></content>
       <categories>
         <category>分类1</category>
