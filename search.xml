@@ -2,11 +2,43 @@
 <search>
   <entry>
     <title>创建个人博客，记录一下</title>
+    <url>/2024/03/04/python%E4%B8%8E%E5%89%AA%E6%98%A0%E7%9A%84%E8%81%94%E5%8A%A8/</url>
+    <content><![CDATA[<p>**友情链接<br>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a> 介绍了剪映草稿所需的两个json文件</p>
+]]></content>
+      <categories>
+        <category>分类1</category>
+        <category>分类2</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>创建个人博客，记录一下</title>
     <url>/2024/03/04/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/</url>
     <content><![CDATA[<p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
 <p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
 <p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
 <p>4.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+]]></content>
+      <categories>
+        <category>分类1</category>
+        <category>分类2</category>
+      </categories>
+      <tags>
+        <tag>标签1</tag>
+        <tag>标签2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录一下折腾chatglm的经历</title>
+    <url>/2024/03/04/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E6%8A%98%E8%85%BEchatglm%E7%9A%84%E7%BB%8F%E5%8E%86/</url>
+    <content><![CDATA[<p>**友情链接<br>1）<a href="https://www.cnblogs.com/yechangxin/articles/17078566">https://www.cnblogs.com/yechangxin/articles/17078566</a> 介绍了电脑中多个python版本，但是命令行只显示一个的解决办法<br>2）<a href="https://zhuanlan.zhihu.com/p/653956781">https://zhuanlan.zhihu.com/p/653956781</a> 大语言模型Prompt工程-原理详解篇</p>
+<p>**代码部分<br>*1.打开命令行<br>    win键+R 输入cmd（非管理员身份）<br>    开始菜单搜索cmd 以管理员身份运行（管理员身份）</p>
+<p>*2.包管理相关命令<br>    python -m pip list 展示已经安装的包<br>    python -V          检查python版本</p>
+<p>*3.pycharm中的包管理<br>    文件-设置-项目-python解释器</p>
+<p>**大模型基础知识部分<br>*1.调用方式<br>    同步调用：调用后即可一次性获得最终结果<br>    异步调用：调用后会立即返回一个任务 ID ，然后用任务ID查询调用结果（注意不直接返回最终回复）<br>    SSE 调用（流式调用）：调用后可以流式的实时获取到结果直到结束<br>*2.</p>
 ]]></content>
       <categories>
         <category>分类1</category>
