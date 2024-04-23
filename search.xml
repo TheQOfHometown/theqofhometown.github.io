@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python与剪映的联动</title>
-    <url>/2024/03/28/python%E4%B8%8E%E5%89%AA%E6%98%A0%E7%9A%84%E8%81%94%E5%8A%A8/</url>
-    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a>  介绍了剪映草稿所需的两个json文件（draft_content.json和draft_meta_info.json）<br>2.<a href="https://blog.csdn.net/a820206256/article/details/134428639">https://blog.csdn.net/a820206256/article/details/134428639</a>  两个json文件的深度解析，有示例代码<br>3.<a href="https://blog.csdn.net/qq_43211132/article/details/103784910">https://blog.csdn.net/qq_43211132/article/details/103784910</a> 解决了user路径报错的问题</p>
-<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-本人电脑剪映草稿位置："><a href="#1-本人电脑剪映草稿位置：" class="headerlink" title="1.本人电脑剪映草稿位置："></a>1.本人电脑剪映草稿位置：</h2><p>C:\Users\86159\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft</p>
-]]></content>
-      <categories>
-        <category>工程记录</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>自动化</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>pyautogui的使用</title>
     <url>/2024/04/01/pyautogui%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/302592540">https://zhuanlan.zhihu.com/p/302592540</a> 这个库的简单介绍<br>2.<a href="https://blog.csdn.net/coco56/article/details/107847467">https://blog.csdn.net/coco56/article/details/107847467</a> 介绍了一下python监听键盘的方法<br>3.<a href="https://blog.csdn.net/tscaxx/article/details/108757876">https://blog.csdn.net/tscaxx/article/details/108757876</a> 救命了，screenshot函数找不到的问题的一个替代方案<br>4.<a href="https://blog.csdn.net/weixin_30655569/article/details/94790215">https://blog.csdn.net/weixin_30655569/article/details/94790215</a> win32api的安装方法：pip install pypiwin32</p>
@@ -37,15 +23,37 @@
       </tags>
   </entry>
   <entry>
-    <title>解决记事本被删除文件卡死进程的问题</title>
-    <url>/2024/04/23/%E8%A7%A3%E5%86%B3%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%A2%AB%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%8D%A1%E6%AD%BB%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>1.在设置-应用中找到记事本，重置应用<br>2.随便打开一个记事本，右上角设置，选择记事本启动时打开新窗口</p>
+    <title>svc炼丹小记</title>
+    <url>/2024/04/14/svc%E7%82%BC%E4%B8%B9%E5%B0%8F%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md">https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md</a> github链接<br>  git clone <a href="https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git">https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git</a><br>2.<a href="https://blog.csdn.net/qq_45061258/article/details/113282513">https://blog.csdn.net/qq_45061258/article/details/113282513</a> cd失败的解决办法<br>3.<a href="https://zhuanlan.zhihu.com/p/118743228">https://zhuanlan.zhihu.com/p/118743228</a> 音频分离</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-检测你的脚本能否使用cuda"><a href="#1-检测你的脚本能否使用cuda" class="headerlink" title="1.检测你的脚本能否使用cuda"></a>1.检测你的脚本能否使用cuda</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
+<h2 id="2-炼丹代码"><a href="#2-炼丹代码" class="headerlink" title="2.炼丹代码"></a>2.炼丹代码</h2><p>cd D:\user\PycharmProjects\ai_video\so-vits-svc<br>python resample.py<br>python preprocess_flist_config.py –speech_encoder vec768l12<br>python preprocess_hubert_f0.py –f0_predictor rmvpe<br>python train.py -c configs&#x2F;config.json -m 44k</p>
+<p>conda run -n svc python D:\user\PycharmProjects\ai_video\so-vits-svc\inference_main.py -m “logs&#x2F;44k&#x2F;G_23200.pth” -c “logs&#x2F;44k&#x2F;config.json” -n “nahida” </p>
+<h2 id="3-安装符合cuda版本的pytorch"><a href="#3-安装符合cuda版本的pytorch" class="headerlink" title="3.安装符合cuda版本的pytorch"></a>3.安装符合cuda版本的pytorch</h2><p>conda install pytorch torchvision torchaudio pytorch-cuda&#x3D;11.8 -c pytorch -c “nivada”</p>
+<h2 id="4-安装符合faiss-gpu"><a href="#4-安装符合faiss-gpu" class="headerlink" title="4.安装符合faiss_gpu"></a>4.安装符合faiss_gpu</h2><p>conda install -c pytorch faiss-gpu</p>
+<h2 id="5-查看显卡运行情况"><a href="#5-查看显卡运行情况" class="headerlink" title="5.查看显卡运行情况"></a>5.查看显卡运行情况</h2><p>nvidia-smi</p>
+<h2 id="6-分离音频命令"><a href="#6-分离音频命令" class="headerlink" title="6.分离音频命令"></a>6.分离音频命令</h2><p>spleeter separate -p spleeter:2stems -o D:\user\PycharmProjects\ai_video\seprate D:\user\PycharmProjects\ai_video\source\original_music\勾指起誓.mp3</p>
 ]]></content>
       <categories>
-        <category>问题解决</category>
+        <category>工程记录</category>
       </categories>
       <tags>
-        <tag>记事本</tag>
+        <tag>python</tag>
+        <tag>svc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python与剪映的联动</title>
+    <url>/2024/03/28/python%E4%B8%8E%E5%89%AA%E6%98%A0%E7%9A%84%E8%81%94%E5%8A%A8/</url>
+    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a>  介绍了剪映草稿所需的两个json文件（draft_content.json和draft_meta_info.json）<br>2.<a href="https://blog.csdn.net/a820206256/article/details/134428639">https://blog.csdn.net/a820206256/article/details/134428639</a>  两个json文件的深度解析，有示例代码<br>3.<a href="https://blog.csdn.net/qq_43211132/article/details/103784910">https://blog.csdn.net/qq_43211132/article/details/103784910</a> 解决了user路径报错的问题</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-本人电脑剪映草稿位置："><a href="#1-本人电脑剪映草稿位置：" class="headerlink" title="1.本人电脑剪映草稿位置："></a>1.本人电脑剪映草稿位置：</h2><p>C:\Users\86159\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft</p>
+]]></content>
+      <categories>
+        <category>工程记录</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>自动化</tag>
       </tags>
   </entry>
   <entry>
@@ -55,7 +63,8 @@
 <p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
 <p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
 <p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
-<p>4.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+<p>4.本地测试方法<br>hexo s<br>然后访问 <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p>5.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
 ]]></content>
       <categories>
         <category>工程记录</category>
@@ -63,23 +72,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过调用命令行串联多个项目</title>
-    <url>/2024/04/15/%E9%80%9A%E8%BF%87%E8%B0%83%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%B2%E8%81%94%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/91342640">https://zhuanlan.zhihu.com/p/91342640</a> subprocess的简单介绍<br>2.<a href="https://blog.csdn.net/m0_66922250/article/details/133928172">https://blog.csdn.net/m0_66922250/article/details/133928172</a> 不同环境的串联</p>
-<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-在指定conda下运行某行命令"><a href="#1-在指定conda下运行某行命令" class="headerlink" title="1.在指定conda下运行某行命令"></a>1.在指定conda下运行某行命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">command_1 = (<span class="string">r&#x27;cmd.exe /c conda run -n svc python D:\user\PycharmProjects\ai_video\my_resample.py --in_dir D:\user\PycharmProjects\ai_video\original_music --out_dir2 D:\user\PycharmProjects\ai_video\resample_original_music&#x27;</span>)</span><br><span class="line">subprocess.run(command_1, shell=<span class="literal">True</span>, check=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="2-如果需要用到管理员权限"><a href="#2-如果需要用到管理员权限" class="headerlink" title="2.如果需要用到管理员权限"></a>2.如果需要用到管理员权限</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ctypes</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_admin</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> ctypes.windll.shell32.IsUserAnAdmin()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> is_admin():</span><br><span class="line">    <span class="comment">#在此输入你要用管理员权限执行的代码</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    ctypes.windll.shell32.ShellExecuteW(<span class="literal">None</span>, <span class="string">&quot;runas&quot;</span>, sys.executable, <span class="string">&quot; &quot;</span>.join(sys.argv), <span class="literal">None</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
-      <categories>
-        <category>工程记录</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
@@ -104,23 +96,32 @@
       </tags>
   </entry>
   <entry>
-    <title>svc炼丹小记</title>
-    <url>/2024/04/14/svc%E7%82%BC%E4%B8%B9%E5%B0%8F%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md">https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md</a> github链接<br>  git clone <a href="https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git">https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git</a><br>2.<a href="https://blog.csdn.net/qq_45061258/article/details/113282513">https://blog.csdn.net/qq_45061258/article/details/113282513</a> cd失败的解决办法<br>3.<a href="https://zhuanlan.zhihu.com/p/118743228">https://zhuanlan.zhihu.com/p/118743228</a> 音频分离</p>
-<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-检测你的脚本能否使用cuda"><a href="#1-检测你的脚本能否使用cuda" class="headerlink" title="1.检测你的脚本能否使用cuda"></a>1.检测你的脚本能否使用cuda</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
-<h2 id="2-炼丹代码"><a href="#2-炼丹代码" class="headerlink" title="2.炼丹代码"></a>2.炼丹代码</h2><p>cd D:\user\PycharmProjects\ai_video\so-vits-svc<br>python resample.py<br>python preprocess_flist_config.py –speech_encoder vec768l12<br>python preprocess_hubert_f0.py –f0_predictor rmvpe<br>python train.py -c configs&#x2F;config.json -m 44k</p>
-<p>conda run -n svc python D:\user\PycharmProjects\ai_video\so-vits-svc\inference_main.py -m “logs&#x2F;44k&#x2F;G_23200.pth” -c “logs&#x2F;44k&#x2F;config.json” -n “nahida” </p>
-<h2 id="3-安装符合cuda版本的pytorch"><a href="#3-安装符合cuda版本的pytorch" class="headerlink" title="3.安装符合cuda版本的pytorch"></a>3.安装符合cuda版本的pytorch</h2><p>conda install pytorch torchvision torchaudio pytorch-cuda&#x3D;11.8 -c pytorch -c “nivada”</p>
-<h2 id="4-安装符合faiss-gpu"><a href="#4-安装符合faiss-gpu" class="headerlink" title="4.安装符合faiss_gpu"></a>4.安装符合faiss_gpu</h2><p>conda install -c pytorch faiss-gpu</p>
-<h2 id="5-查看显卡运行情况"><a href="#5-查看显卡运行情况" class="headerlink" title="5.查看显卡运行情况"></a>5.查看显卡运行情况</h2><p>nvidia-smi</p>
-<h2 id="6-分离音频命令"><a href="#6-分离音频命令" class="headerlink" title="6.分离音频命令"></a>6.分离音频命令</h2><p>spleeter separate -p spleeter:2stems -o D:\user\PycharmProjects\ai_video\seprate D:\user\PycharmProjects\ai_video\source\original_music\勾指起誓.mp3</p>
+    <title>通过调用命令行串联多个项目</title>
+    <url>/2024/04/15/%E9%80%9A%E8%BF%87%E8%B0%83%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%B2%E8%81%94%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/91342640">https://zhuanlan.zhihu.com/p/91342640</a> subprocess的简单介绍<br>2.<a href="https://blog.csdn.net/m0_66922250/article/details/133928172">https://blog.csdn.net/m0_66922250/article/details/133928172</a> 不同环境的串联</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-在指定conda下运行某行命令"><a href="#1-在指定conda下运行某行命令" class="headerlink" title="1.在指定conda下运行某行命令"></a>1.在指定conda下运行某行命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">command_1 = (<span class="string">r&#x27;cmd.exe /c conda run -n svc python D:\user\PycharmProjects\ai_video\my_resample.py --in_dir D:\user\PycharmProjects\ai_video\original_music --out_dir2 D:\user\PycharmProjects\ai_video\resample_original_music&#x27;</span>)</span><br><span class="line">subprocess.run(command_1, shell=<span class="literal">True</span>, check=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="2-如果需要用到管理员权限"><a href="#2-如果需要用到管理员权限" class="headerlink" title="2.如果需要用到管理员权限"></a>2.如果需要用到管理员权限</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ctypes</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_admin</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> ctypes.windll.shell32.IsUserAnAdmin()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> is_admin():</span><br><span class="line">    <span class="comment">#在此输入你要用管理员权限执行的代码</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    ctypes.windll.shell32.ShellExecuteW(<span class="literal">None</span>, <span class="string">&quot;runas&quot;</span>, sys.executable, <span class="string">&quot; &quot;</span>.join(sys.argv), <span class="literal">None</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
         <category>工程记录</category>
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>svc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决记事本被删除文件卡死进程的问题</title>
+    <url>/2024/04/23/%E8%A7%A3%E5%86%B3%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%A2%AB%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%8D%A1%E6%AD%BB%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>1.在设置-应用中找到记事本，重置应用<br>2.随便打开一个记事本，右上角设置，选择记事本启动时打开新窗口</p>
+]]></content>
+      <categories>
+        <category>问题解决</category>
+      </categories>
+      <tags>
+        <tag>记事本</tag>
       </tags>
   </entry>
 </search>
