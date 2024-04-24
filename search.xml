@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World!</title>
+    <url>/2024/03/04/Hello%20World%EF%BC%81/</url>
+    <content><![CDATA[<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p>1.<a href="https://blog.csdn.net/wxmiy/article/details/89740575">https://blog.csdn.net/wxmiy/article/details/89740575</a> 介绍了一个网易云mp3外链的获取方法，缺点是vip音乐不行<br>2.<a href="https://music.gimhoy.com/">https://music.gimhoy.com/</a> 一个mp3文件转mp3外链的解决方案（2024-3-28还没寄）</p>
+<p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
+<p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
+<p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
+<p>4.本地测试方法<br>hexo s<br>然后访问 <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p>5.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+]]></content>
+      <categories>
+        <category>工程记录</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pyautogui的使用</title>
     <url>/2024/04/01/pyautogui%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/302592540">https://zhuanlan.zhihu.com/p/302592540</a> 这个库的简单介绍<br>2.<a href="https://blog.csdn.net/coco56/article/details/107847467">https://blog.csdn.net/coco56/article/details/107847467</a> 介绍了一下python监听键盘的方法<br>3.<a href="https://blog.csdn.net/tscaxx/article/details/108757876">https://blog.csdn.net/tscaxx/article/details/108757876</a> 救命了，screenshot函数找不到的问题的一个替代方案<br>4.<a href="https://blog.csdn.net/weixin_30655569/article/details/94790215">https://blog.csdn.net/weixin_30655569/article/details/94790215</a> win32api的安装方法：pip install pypiwin32</p>
@@ -57,21 +75,15 @@
       </tags>
   </entry>
   <entry>
-    <title>创建个人博客，记录一下</title>
-    <url>/2024/03/04/%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%8C%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B/</url>
-    <content><![CDATA[<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p>1.<a href="https://blog.csdn.net/wxmiy/article/details/89740575">https://blog.csdn.net/wxmiy/article/details/89740575</a> 介绍了一个网易云mp3外链的获取方法，缺点是vip音乐不行<br>2.<a href="https://music.gimhoy.com/">https://music.gimhoy.com/</a> 一个mp3文件转mp3外链的解决方案（2024-3-28还没寄）</p>
-<p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
-<p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
-<p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
-<p>4.本地测试方法<br>hexo s<br>然后访问 <a href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p>5.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+    <title>解决记事本被删除文件卡死进程的问题</title>
+    <url>/2024/04/23/%E8%A7%A3%E5%86%B3%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%A2%AB%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%8D%A1%E6%AD%BB%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>1.在设置-应用中找到记事本，重置应用<br>2.随便打开一个记事本，右上角设置，选择记事本启动时打开新窗口</p>
 ]]></content>
       <categories>
-        <category>工程记录</category>
+        <category>问题解决</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>博客</tag>
+        <tag>记事本</tag>
       </tags>
   </entry>
   <entry>
@@ -110,18 +122,6 @@
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决记事本被删除文件卡死进程的问题</title>
-    <url>/2024/04/23/%E8%A7%A3%E5%86%B3%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%A2%AB%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%8D%A1%E6%AD%BB%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p>1.在设置-应用中找到记事本，重置应用<br>2.随便打开一个记事本，右上角设置，选择记事本启动时打开新窗口</p>
-]]></content>
-      <categories>
-        <category>问题解决</category>
-      </categories>
-      <tags>
-        <tag>记事本</tag>
       </tags>
   </entry>
 </search>
