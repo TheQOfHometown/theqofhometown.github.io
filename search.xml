@@ -178,4 +178,19 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
         <tag>python</tag>
       </tags>
   </entry>
+  <entry>
+    <title>看看谁还没有交作业</title>
+    <url>/2024/04/29/%E7%9C%8B%E7%9C%8B%E6%98%AF%E8%B0%81%E8%BF%98%E6%B2%A1%E6%9C%89%E4%BA%A4%E4%BD%9C%E4%B8%9A/</url>
+    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于苯人是某苦逼学委，经常遇到少那么几个人没交作业的情况。为了省心故编写这么一段代码帮助工作，也希望能帮到大家（虽然我这小破博客也没啥浏览量）</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>代码分享</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>
