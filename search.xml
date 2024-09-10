@@ -19,23 +19,8 @@
       </tags>
   </entry>
   <entry>
-    <title>pyautogui的使用</title>
-    <url>/2024/04/01/pyautogui%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-放一个批量截图的小程序"><a href="#1-放一个批量截图的小程序" class="headerlink" title="1.放一个批量截图的小程序"></a>1.放一个批量截图的小程序</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> keyboard</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> ImageGrab</span><br><span class="line"></span><br><span class="line">sizex,sizey=pyautogui.size() <span class="comment"># 保存屏幕尺寸</span></span><br><span class="line"><span class="built_in">print</span>(sizex,sizey)</span><br><span class="line">i=<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i!=<span class="number">0</span>:</span><br><span class="line">    keyboard.wait(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="comment"># 参数说明</span></span><br><span class="line">    <span class="comment"># 第一个参数 开始截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第二个参数 开始截图的y坐标</span></span><br><span class="line">    <span class="comment"># 第三个参数 结束截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第四个参数 结束截图的y坐标</span></span><br><span class="line">    bbox = (<span class="number">0</span>, sizey/<span class="number">2</span>, sizex, sizey)</span><br><span class="line">    im = ImageGrab.grab(bbox)</span><br><span class="line">    picture_name = <span class="built_in">str</span>(i)</span><br><span class="line">    root = <span class="string">&#x27;C:/pr&#x27;</span>  <span class="comment"># 保存地址</span></span><br><span class="line">    path = root + <span class="string">&quot;/&quot;</span> + picture_name +<span class="string">&#x27;.png&#x27;</span> <span class="comment"># 保存地址</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        im.save(path)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存成功，保存在&#x27;</span> + root + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存失败&#x27;</span>)</span><br><span class="line">    i+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/302592540">https://zhuanlan.zhihu.com/p/302592540</a> 这个库的简单介绍<br>2.<a href="https://blog.csdn.net/coco56/article/details/107847467">https://blog.csdn.net/coco56/article/details/107847467</a> 介绍了一下python监听键盘的方法<br>3.<a href="https://blog.csdn.net/tscaxx/article/details/108757876">https://blog.csdn.net/tscaxx/article/details/108757876</a> 救命了，screenshot函数找不到的问题的一个替代方案<br>4.<a href="https://blog.csdn.net/weixin_30655569/article/details/94790215">https://blog.csdn.net/weixin_30655569/article/details/94790215</a> win32api的安装方法：pip install pypiwin32</p>
-]]></content>
-      <categories>
-        <category>代码分享</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>自动化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python与剪映的联动</title>
-    <url>/2024/03/28/python%E4%B8%8E%E5%89%AA%E6%98%A0%E7%9A%84%E8%81%94%E5%8A%A8/</url>
+    <title>Python自动化剪视频</title>
+    <url>/2024/03/28/Python%E8%87%AA%E5%8A%A8%E5%8C%96%E5%89%AA%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-本人电脑剪映草稿位置："><a href="#1-本人电脑剪映草稿位置：" class="headerlink" title="1.本人电脑剪映草稿位置："></a>1.本人电脑剪映草稿位置：</h2><p>C:\Users\86159\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft</p>
 <h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a>  介绍了剪映草稿所需的两个json文件（draft_content.json和draft_meta_info.json）<br>2.<a href="https://blog.csdn.net/a820206256/article/details/134428639">https://blog.csdn.net/a820206256/article/details/134428639</a>  两个json文件的深度解析，有示例代码<br>3.<a href="https://blog.csdn.net/qq_43211132/article/details/103784910">https://blog.csdn.net/qq_43211132/article/details/103784910</a> 解决了user路径报错的问题</p>
 ]]></content>
@@ -48,28 +33,82 @@
       </tags>
   </entry>
   <entry>
-    <title>svc炼丹小记</title>
-    <url>/2024/04/14/svc%E7%82%BC%E4%B8%B9%E5%B0%8F%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-检测你的脚本能否使用cuda"><a href="#1-检测你的脚本能否使用cuda" class="headerlink" title="1.检测你的脚本能否使用cuda"></a>1.检测你的脚本能否使用cuda</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
+    <title>SVC虚拟歌手</title>
+    <url>/2024/04/14/SVC%E8%99%9A%E6%8B%9F%E6%AD%8C%E6%89%8B/</url>
+    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-安装pytorch版本的faiss-gpu"><a href="#1-安装pytorch版本的faiss-gpu" class="headerlink" title="1.安装pytorch版本的faiss_gpu"></a>1.安装pytorch版本的faiss_gpu</h2><p>这里用到12.4的cuda，使用的pytorch版本为2.4.0<br>conda install -c pytorch faiss-gpu</p>
 <h2 id="2-炼丹代码"><a href="#2-炼丹代码" class="headerlink" title="2.炼丹代码"></a>2.炼丹代码</h2><p>cd D:\user\PycharmProjects\ai_video\so-vits-svc<br>python resample.py<br>python preprocess_flist_config.py –speech_encoder vec768l12<br>python preprocess_hubert_f0.py –f0_predictor rmvpe<br>python train.py -c configs&#x2F;config.json -m 44k</p>
-<p>conda run -n svc python D:\user\PycharmProjects\ai_video\qulingwen_so-vits-svc\inference_main.py -m “logs&#x2F;44k&#x2F;G_9600.pth” -c “logs&#x2F;44k&#x2F;config.json” -n “1_舒肤佳_(Vocals)” -t 0 -s “dongyilin”</p>
-<h2 id="3-安装符合cuda版本的pytorch"><a href="#3-安装符合cuda版本的pytorch" class="headerlink" title="3.安装符合cuda版本的pytorch"></a>3.安装符合cuda版本的pytorch</h2><p>conda install pytorch torchvision torchaudio pytorch-cuda&#x3D;11.8 -c pytorch -c “nivada”</p>
-<h2 id="4-安装符合faiss-gpu"><a href="#4-安装符合faiss-gpu" class="headerlink" title="4.安装符合faiss_gpu"></a>4.安装符合faiss_gpu</h2><p>conda install -c pytorch faiss-gpu</p>
-<h2 id="5-查看显卡运行情况"><a href="#5-查看显卡运行情况" class="headerlink" title="5.查看显卡运行情况"></a>5.查看显卡运行情况</h2><p>nvidia-smi</p>
-<h2 id="6-分离音频命令"><a href="#6-分离音频命令" class="headerlink" title="6.分离音频命令"></a>6.分离音频命令</h2><p>spleeter separate -p spleeter:2stems -o D:\user\PycharmProjects\ai_video\seprate D:\user\PycharmProjects\ai_video\source\original_music\勾指起誓.mp3</p>
+<h2 id="3-模型推理"><a href="#3-模型推理" class="headerlink" title="3.模型推理"></a>3.模型推理</h2><p>conda run -n svc python D:\user\PycharmProjects\ai_video\qulingwen_so-vits-svc\inference_main.py -m “logs&#x2F;44k&#x2F;G_9600.pth” -c “logs&#x2F;44k&#x2F;config.json” -n “勾指起誓(Vocals)” -t 0 -s “dongyilin”</p>
 <h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md">https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/README_zh_CN.md</a> github链接<br>  git clone <a href="https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git">https://mirror.ghproxy.com/https://github.com/svc-develop-team/so-vits-svc.git</a><br>2.<a href="https://blog.csdn.net/qq_45061258/article/details/113282513">https://blog.csdn.net/qq_45061258/article/details/113282513</a> cd失败的解决办法<br>3.<a href="https://zhuanlan.zhihu.com/p/118743228">https://zhuanlan.zhihu.com/p/118743228</a> 音频分离</p>
 ]]></content>
       <categories>
-        <category>工程记录</category>
+        <category>神经网络</category>
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>svc</tag>
       </tags>
   </entry>
   <entry>
-    <title>初窥人工智能时代</title>
-    <url>/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3/</url>
+    <title>PyautoGui自动化</title>
+    <url>/2024/04/01/PyautoGui%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-放一个批量截图的小程序"><a href="#1-放一个批量截图的小程序" class="headerlink" title="1.放一个批量截图的小程序"></a>1.放一个批量截图的小程序</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> keyboard</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> ImageGrab</span><br><span class="line"></span><br><span class="line">sizex,sizey=pyautogui.size() <span class="comment"># 保存屏幕尺寸</span></span><br><span class="line"><span class="built_in">print</span>(sizex,sizey)</span><br><span class="line">i=<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i!=<span class="number">0</span>:</span><br><span class="line">    keyboard.wait(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="comment"># 参数说明</span></span><br><span class="line">    <span class="comment"># 第一个参数 开始截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第二个参数 开始截图的y坐标</span></span><br><span class="line">    <span class="comment"># 第三个参数 结束截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第四个参数 结束截图的y坐标</span></span><br><span class="line">    bbox = (<span class="number">0</span>, sizey/<span class="number">2</span>, sizex, sizey)</span><br><span class="line">    im = ImageGrab.grab(bbox)</span><br><span class="line">    picture_name = <span class="built_in">str</span>(i)</span><br><span class="line">    root = <span class="string">&#x27;C:/pr&#x27;</span>  <span class="comment"># 保存地址</span></span><br><span class="line">    path = root + <span class="string">&quot;/&quot;</span> + picture_name +<span class="string">&#x27;.png&#x27;</span> <span class="comment"># 保存地址</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        im.save(path)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存成功，保存在&#x27;</span> + root + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存失败&#x27;</span>)</span><br><span class="line">    i+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/302592540">https://zhuanlan.zhihu.com/p/302592540</a> 这个库的简单介绍<br>2.<a href="https://blog.csdn.net/coco56/article/details/107847467">https://blog.csdn.net/coco56/article/details/107847467</a> 介绍了一下python监听键盘的方法<br>3.<a href="https://blog.csdn.net/tscaxx/article/details/108757876">https://blog.csdn.net/tscaxx/article/details/108757876</a> 救命了，screenshot函数找不到的问题的一个替代方案<br>4.<a href="https://blog.csdn.net/weixin_30655569/article/details/94790215">https://blog.csdn.net/weixin_30655569/article/details/94790215</a> win32api的安装方法：pip install pypiwin32</p>
+]]></content>
+      <categories>
+        <category>tips</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>自动化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python环境相关问题与解决</title>
+    <url>/2024/09/10/python%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>1.安装包时代码报错ERROR: Could not install packages due to an OSError: [WinError 2] 系统找不到指定的文件<br>解：需要用管理员权限运行命令提示符</p>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VAE变分自编码器</title>
+    <url>/2024/09/06/VAE%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/</url>
+    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-pip版本的适配"><a href="#1-pip版本的适配" class="headerlink" title="1.pip版本的适配"></a>1.pip版本的适配</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;19.2（降级pip）<br>这里使用20.2.4安装比较好</p>
+<h2 id="2-conda命令"><a href="#2-conda命令" class="headerlink" title="2.conda命令"></a>2.conda命令</h2><p>conda remove -n VAE3 –all<br>conda create –name VAE3 python&#x3D;3.6</p>
+<h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h2><p>python run.py -c configs&#x2F;bbvae.yaml</p>
+<h2 id="4-pytorch安装"><a href="#4-pytorch安装" class="headerlink" title="4.pytorch安装"></a>4.pytorch安装</h2><p>要cuda11.3</p>
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://blog.csdn.net/qq_39635835/article/details/140235059">https://blog.csdn.net/qq_39635835/article/details/140235059</a> NCCL检测不到的问题</p>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个异环境多项目串联解决方案</title>
+    <url>/2024/04/15/%E4%B8%80%E4%B8%AA%E5%BC%82%E7%8E%AF%E5%A2%83%E5%A4%9A%E9%A1%B9%E7%9B%AE%E4%B8%B2%E8%81%94%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-在指定conda下运行某行命令"><a href="#1-在指定conda下运行某行命令" class="headerlink" title="1.在指定conda下运行某行命令"></a>1.在指定conda下运行某行命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">command_1 = (<span class="string">r&#x27;cmd.exe /c conda run -n svc python D:\user\PycharmProjects\ai_video\my_resample.py --in_dir D:\user\PycharmProjects\ai_video\original_music --out_dir2 D:\user\PycharmProjects\ai_video\resample_original_music&#x27;</span>)</span><br><span class="line">subprocess.run(command_1, shell=<span class="literal">True</span>, check=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="2-如果需要用到管理员权限"><a href="#2-如果需要用到管理员权限" class="headerlink" title="2.如果需要用到管理员权限"></a>2.如果需要用到管理员权限</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ctypes</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_admin</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> ctypes.windll.shell32.IsUserAnAdmin()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> is_admin():</span><br><span class="line">    <span class="comment">#在此输入你要用管理员权限执行的代码</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    ctypes.windll.shell32.ShellExecuteW(<span class="literal">None</span>, <span class="string">&quot;runas&quot;</span>, sys.executable, <span class="string">&quot; &quot;</span>.join(sys.argv), <span class="literal">None</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/91342640">https://zhuanlan.zhihu.com/p/91342640</a> subprocess的简单介绍<br>2.<a href="https://blog.csdn.net/m0_66922250/article/details/133928172">https://blog.csdn.net/m0_66922250/article/details/133928172</a> 不同环境的串联</p>
+]]></content>
+      <categories>
+        <category>tips</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初窥人工智能时代（科普向）</title>
+    <url>/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/</url>
     <content><![CDATA[<center>初窥人工智能时代</center>
 
 <p>&ensp;&ensp; “ChatGPT”、“OpenAI”、“通用人工智能”，“大模型”，“提示词工程”，“AIagent”，“LangChain”，“Token”，这些人工智能行业的黑化在2023这个普通又神奇的年份里不断冲刷着大家的认知。相信同学们对这些热门话题都有一定的了解。但到底什么是大模型？国内外发展状况是怎样的？在人工智能火热的今天我们将如何自处？本文将会避免专业晦涩的词汇，从学生的角度，分四个方面为同学们一一讲清楚这些问题。</p>
@@ -132,62 +171,63 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
       </tags>
   </entry>
   <entry>
-    <title>看看谁还没有交作业</title>
-    <url>/2024/04/29/%E7%9C%8B%E7%9C%8B%E6%98%AF%E8%B0%81%E8%BF%98%E6%B2%A1%E6%9C%89%E4%BA%A4%E4%BD%9C%E4%B8%9A/</url>
-    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于苯人是某苦逼学委，经常遇到少那么几个人没交作业的情况。为了省心故编写这么一段代码帮助工作，也希望能帮到大家（虽然我这小破博客也没啥浏览量）</p>
+    <title>学委小助手</title>
+    <url>/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
+    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于是某苦逼学委，经常遇到少数几个人没交作业的情况。该代码可以帮助清点作业，希望能帮到大家。</p>
 <h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 ]]></content>
       <categories>
-        <category>代码分享</category>
+        <category>tips</category>
       </categories>
       <tags>
         <tag>python</tag>
       </tags>
   </entry>
   <entry>
-    <title>解决记事本被删除文件卡死进程的问题</title>
-    <url>/2024/04/23/%E8%A7%A3%E5%86%B3%E8%AE%B0%E4%BA%8B%E6%9C%AC%E8%A2%AB%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E5%8D%A1%E6%AD%BB%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <title>环境配置常用命令</title>
+    <url>/2024/04/14/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="1-conda虚拟环境"><a href="#1-conda虚拟环境" class="headerlink" title="1.conda虚拟环境"></a>1.conda虚拟环境</h2><p>conda remove -n yourname –all<br>conda create –name yourname python&#x3D;3.6<br>conda create –name VAE2 python&#x3D;3.7</p>
+<h2 id="2-pip-版本控制"><a href="#2-pip-版本控制" class="headerlink" title="2.pip 版本控制"></a>2.pip 版本控制</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;20.2.4（降级pip）</p>
+<h2 id="3-cuda与pytorch版本检查"><a href="#3-cuda与pytorch版本检查" class="headerlink" title="3.cuda与pytorch版本检查"></a>3.cuda与pytorch版本检查</h2><p>nvcc -V（检查cuda版本）</p>
+<p>python<br>import torch<br>torch.<strong>version</strong></p>
+<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h1 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h1><p>D:\Users\86159\AppData\Local\Temp\CUDA（11.3.0 CUDA安装路径）<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3（Documentation和Development）<br>C:\Program Files\NVIDIA Corporation\CUDA Samples\v11.3（Samples）</p>
+<h1 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h1><h2 id="1-检查你的脚本能否正常使用gpu加速运算"><a href="#1-检查你的脚本能否正常使用gpu加速运算" class="headerlink" title="1.检查你的脚本能否正常使用gpu加速运算"></a>1.检查你的脚本能否正常使用gpu加速运算</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
+<h2 id="检查你的GPU状态"><a href="#检查你的GPU状态" class="headerlink" title="检查你的GPU状态"></a>检查你的GPU状态</h2><p>nvidia-smi（检查显卡状况，注意这里显示的是显卡最大支持的cuda版本）</p>
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a> 查看pytorch对应版本并获取安装命令(包括torch，torchvision和torchaudio)<br>2.<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a> 下载指定版本cuda<br>3.<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a> 下载指定版本cuddn<br>4.<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support">https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support</a> 查看pytorch-lightning版本对应<br>5.<a href="https://blog.csdn.net/qq_50677040/article/details/132131346">https://blog.csdn.net/qq_50677040/article/details/132131346</a> 多版本cuda切换方法</p>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>命令集</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记事本无法正常关闭</title>
+    <url>/2024/04/23/%E8%AE%B0%E4%BA%8B%E6%9C%AC%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%85%B3%E9%97%AD/</url>
     <content><![CDATA[<p>1.在设置-应用中找到记事本，重置应用<br>2.随便打开一个记事本，右上角设置，选择记事本启动时打开新窗口</p>
 ]]></content>
       <categories>
-        <category>问题解决</category>
+        <category>tips</category>
       </categories>
       <tags>
         <tag>记事本</tag>
       </tags>
   </entry>
   <entry>
-    <title>记录一下折腾chatglm的经历</title>
-    <url>/2024/03/11/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E6%8A%98%E8%85%BEchatglm%E7%9A%84%E7%BB%8F%E5%8E%86/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-打开命令行"><a href="#1-打开命令行" class="headerlink" title="1.打开命令行"></a>1.打开命令行</h2><p>win键+R 输入cmd（非管理员身份）<br>开始菜单搜索cmd 以管理员身份运行（管理员身份）</p>
-<h2 id="2-包管理相关命令"><a href="#2-包管理相关命令" class="headerlink" title="2.包管理相关命令"></a>2.包管理相关命令</h2><p>python -m pip list 展示已经安装的包<br>python -V          检查python版本</p>
-<h2 id="3-pycharm中的包管理"><a href="#3-pycharm中的包管理" class="headerlink" title="3.pycharm中的包管理"></a>3.pycharm中的包管理</h2><p>文件-设置-项目-python解释器<br>pip install 包<br>pip install -v 包&#x3D;&#x3D;版本<br>pip uninstall 包</p>
-<h2 id="4-附一段代码示例"><a href="#4-附一段代码示例" class="headerlink" title="4.附一段代码示例"></a>4.附一段代码示例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> zhipuai <span class="keyword">import</span> ZhipuAI</span><br><span class="line"></span><br><span class="line">client = ZhipuAI(api_key=<span class="string">&quot;&quot;</span>) <span class="comment"># 填写您自己的APIKey</span></span><br><span class="line">response = client.chat.completions.create(</span><br><span class="line">    model=<span class="string">&quot;glm-4&quot;</span>,  <span class="comment"># 填写需要调用的模型名称</span></span><br><span class="line">    messages=[</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你好&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;我是人工智能助手&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你叫什么名字&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;我叫chatGLM&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你都可以做些什么事&quot;</span>&#125;</span><br><span class="line">    ],</span><br><span class="line">)</span><br><span class="line"><span class="built_in">print</span>(response.choices[<span class="number">0</span>].message)</span><br></pre></td></tr></table></figure>
+    <title>调用ChatGLM实现信息总结</title>
+    <url>/2024/03/11/%E8%B0%83%E7%94%A8ChatGLM%E5%AE%9E%E7%8E%B0%E4%BF%A1%E6%81%AF%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-代码示例"><a href="#1-代码示例" class="headerlink" title="1.代码示例"></a>1.代码示例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> zhipuai <span class="keyword">import</span> ZhipuAI</span><br><span class="line"></span><br><span class="line">client = ZhipuAI(api_key=<span class="string">&quot;&quot;</span>) <span class="comment"># 填写您自己的APIKey</span></span><br><span class="line">response = client.chat.completions.create(</span><br><span class="line">    model=<span class="string">&quot;glm-4&quot;</span>,  <span class="comment"># 填写需要调用的模型名称</span></span><br><span class="line">    messages=[</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你好&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;我是人工智能助手&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你叫什么名字&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;我叫chatGLM&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你都可以做些什么事&quot;</span>&#125;</span><br><span class="line">    ],</span><br><span class="line">)</span><br><span class="line"><span class="built_in">print</span>(response.choices[<span class="number">0</span>].message)</span><br></pre></td></tr></table></figure>
 
-<h1 id="大模型基础知识部分"><a href="#大模型基础知识部分" class="headerlink" title="大模型基础知识部分"></a>大模型基础知识部分</h1><h2 id="1-调用方式"><a href="#1-调用方式" class="headerlink" title="1.调用方式"></a>1.调用方式</h2><p>同步调用：调用后即可一次性获得最终结果<br>异步调用：调用后会立即返回一个任务 ID ，然后用任务ID查询调用结果（注意不直接返回最终回复）<br>SSE 调用（流式调用）：调用后可以流式的实时获取到结果直到结束</p>
-<h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><p>1.安装包时代码报错ERROR: Could not install packages due to an OSError: [WinError 2] 系统找不到指定的文件<br>解：需要用管理员权限运行命令提示符</p>
+<h2 id="2-三种调用方式"><a href="#2-三种调用方式" class="headerlink" title="2.三种调用方式"></a>2.三种调用方式</h2><p>同步调用：调用后即可一次性获得最终结果<br>异步调用：调用后会立即返回一个任务 ID ，然后用任务ID查询调用结果（注意不直接返回最终回复）<br>SSE 调用（流式调用）：调用后可以流式的实时获取到结果直到结束</p>
+<h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h1><p>1.安装包时代码报错ERROR: Could not install packages due to an OSError: [WinError 2] 系统找不到指定的文件<br>解：需要用管理员权限运行命令提示符</p>
 <h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1）<a href="https://www.cnblogs.com/yechangxin/articles/17078566">https://www.cnblogs.com/yechangxin/articles/17078566</a> 介绍了电脑中多个python版本，但是命令行只显示一个的解决办法<br>2）<a href="https://zhuanlan.zhihu.com/p/653956781">https://zhuanlan.zhihu.com/p/653956781</a> 大语言模型Prompt工程-原理详解篇</p>
 ]]></content>
       <categories>
-        <category>工程记录</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>大模型</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过调用命令行串联多个项目</title>
-    <url>/2024/04/15/%E9%80%9A%E8%BF%87%E8%B0%83%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%B2%E8%81%94%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-在指定conda下运行某行命令"><a href="#1-在指定conda下运行某行命令" class="headerlink" title="1.在指定conda下运行某行命令"></a>1.在指定conda下运行某行命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line">command_1 = (<span class="string">r&#x27;cmd.exe /c conda run -n svc python D:\user\PycharmProjects\ai_video\my_resample.py --in_dir D:\user\PycharmProjects\ai_video\original_music --out_dir2 D:\user\PycharmProjects\ai_video\resample_original_music&#x27;</span>)</span><br><span class="line">subprocess.run(command_1, shell=<span class="literal">True</span>, check=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="2-如果需要用到管理员权限"><a href="#2-如果需要用到管理员权限" class="headerlink" title="2.如果需要用到管理员权限"></a>2.如果需要用到管理员权限</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ctypes</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_admin</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> ctypes.windll.shell32.IsUserAnAdmin()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> is_admin():</span><br><span class="line">    <span class="comment">#在此输入你要用管理员权限执行的代码</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    ctypes.windll.shell32.ShellExecuteW(<span class="literal">None</span>, <span class="string">&quot;runas&quot;</span>, sys.executable, <span class="string">&quot; &quot;</span>.join(sys.argv), <span class="literal">None</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/91342640">https://zhuanlan.zhihu.com/p/91342640</a> subprocess的简单介绍<br>2.<a href="https://blog.csdn.net/m0_66922250/article/details/133928172">https://blog.csdn.net/m0_66922250/article/details/133928172</a> 不同环境的串联</p>
-]]></content>
-      <categories>
-        <category>工程记录</category>
+        <category>LMM</category>
       </categories>
       <tags>
         <tag>python</tag>

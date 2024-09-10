@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>初窥人工智能时代（科普向） | 家乡atlas</title><meta name="keywords" content="科普"><meta name="author" content="家乡"><meta name="copyright" content="家乡"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="初窥人工智能时代（科普向）"><meta name="application-name" content="初窥人工智能时代（科普向）"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="初窥人工智能时代（科普向）"><meta property="og:url" content="https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/index.html"><meta property="og:site_name" content="家乡atlas"><meta property="og:description" content="初窥人工智能时代  &amp;ensp;&amp;ensp; “ChatGPT”、“OpenAI”、“通用人工智能”，“大模型”，“提示词工程”，“AIagent”，“LangChain”，“Token”，这些人工智能行业的黑化在2023这个普通又神奇的年份里不断冲刷着大家的认知。相信同学们对这些热门话题都有一定的"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://theqofhometown.github.io/img/1.jpg"><meta property="article:author" content="家乡"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://theqofhometown.github.io/img/1.jpg"><meta name="description" content="初窥人工智能时代  &amp;ensp;&amp;ensp; “ChatGPT”、“OpenAI”、“通用人工智能”，“大模型”，“提示词工程”，“AIagent”，“LangChain”，“Token”，这些人工智能行业的黑化在2023这个普通又神奇的年份里不断冲刷着大家的认知。相信同学们对这些热门话题都有一定的"><link rel="shortcut icon" href="https://s2.loli.net/2024/04/23/fvmo4MGOr6u3ZFc.png"><link rel="canonical" href="https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({
+  google_ad_client: '',
+  enable_page_level_ads: 'true'
+});</script><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"与数名博主一起共同进步🐶","addFriendPlaceholder":"昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"},
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"不走嘛~ (づ●─●)づ抱抱","backTitle":"欢迎回家呀~o((>ω< ))o"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: {"appId":"ETKQ11I2B5","apiKey":"c7d98f6dd90e77244041f1b13a64ab36","indexName":"my-blog-search","hits":{"per_page":6},"languages":{"input_placeholder":"输入关键词后按下回车查找","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: 家乡","link":"链接: ","source":"来源: 家乡atlas","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '家乡atlas',
+  title: '初窥人工智能时代（科普向）',
+  postAI: '',
+  pageFillDescription: '初窥人工智能时代通用人工智能大模型提示词工程这些人工智能行业的黑化在这个普通又神奇的年份里不断冲刷着大家的认知相信同学们对这些热门话题都有一定的了解但到底什么是大模型国内外发展状况是怎样的在人工智能火热的今天我们将如何自处本文将会避免专业晦涩的词汇从学生的角度分四个方面为同学们一一讲清楚这些问题一什么是大模型大模型按照功能可分为大模型大模型科学计算大模型和多模态大模型计算机视觉方向人脸识别物体检测等典例如腾讯的模型科学计算方向主要用于解决科学领域的计算问题如华为的盘古气象模型多模态方向比较火的有文生图文生音典例如的自然语言处理方向我们所熟知的的系列模型就是这个方向具备强大的语言理解和生成能力本文主要对方向的模型进行科普下文提到的大模型都是方向的大模型你可以把大模型简单的理解为一个成绩普通的大学本科毕业生的大脑这颗大脑因为多年在校学习的经验理解了大量人类的通用知识比如说基础的算数能力基础的推理能力了解基础的物理法则知道人类的发展历史甚至会说谎而大模型在这些方面其实也一样大模型本身是生成模型它的目标仅仅是根据前面的输入来预测词元所以说大模型的本质是计算概率本质上它并不关心你输入的是什么也无意回答你的问题它的目标只是为了让文本看起来完整这就导致了人们所说的大模型的幻觉问题举个例子来说你完全可以让大模型来描述你的早餐尽管它并没有见过你更不知道你早餐吃了什么但并不影响它能很清晰的描述你吃了什么这是因为它读了大量的文档人类的网页人类曾经写过的小说这些资料里边描述早餐就是这样描述的所以它就按照概率写出了这样一段文本所以大模型才经常会发出一些不存在的地址引用一些不存在的论文仅仅是因为和论文在海量的资料里边看起来就是这样的这就是大模型的幻觉有在同学可能会想这跟大学生的大脑也不一样啊其实是一样的比如说你要上课了但是你没有交作业老师会问你的作业呢你会从自己的知识库里边搜索怎么回答比较合理我忘记写了昨天沉浸于帮老奶奶过马路耽误了写作业的时间我的作业被哈吉米吃了我的作业发生了量子隧穿消失了我也还在找根据概率挑一个答案来回复老师我的作业被哈吉米吃了对你的老师来说这其实是一种幻觉你的老师会问合理吗从理论上来说这个可能性也是存在的但是通过老师多年的执教经验来判定大概率是假的这是一个人类分辨出幻觉的例子而像刚才早餐的描述我自己知道它是假的但第三方却很难分辨这段话的真假这就是幻觉问题的危害二英伟达扮演的角色在人工智能时代谁是最大的赢家呢无论从技术角度还是财富增长的角度来看人工智能时代最大的红利获得者似乎是借着的东风实现了财富自由的创业公司创始人但有句老话说的好淘金的不一定赚钱卖铲子一定赚钱如果公司是淘金客那就是卖铲子的现在去查的官网标题已经变成了人工智能计算领域的领导者可见在人工智能浪潮中的获利那么为什么发展非不可呢和最大的差别是一般只有个核心而一个却有上千个核心有个经典的例子是一个科研大牛组成的小组是几千个只会做加减乘除的小学生好巧不巧进行大模型训练就是计算成千上亿个简单的加减乘除因此训练模型远远快于对于这一点本人深有体会本人电脑显卡在做一个小模型训练项目的时候和同学的性能差了倍以上而且显卡是真的贵游戏级别的显卡现在报价左右专业级的如一张成本卖万左右而且这还供不应求这一点从多次在公开场合的言辞中也可以看出在过去一整年里他几乎都在抱怨英伟达短缺导致的供应严重受限的问题有意思的是随着估值逼近亿大关不再满足于血拼谷歌和苹果而是直接向算力霸主英伟达开战据知情人士透露正在积极向全球投资者寻求庞大的资金支持以便建立一座芯片制造厂其中就包括阿布扎比的和日本的软银集团尤其是在与的谈判中涉及金额就已经接近亿到亿美元国内外产业现状三国内外行业现状首先叠个甲学长并不是什么行业大牛对市场的认知难免有所错漏与疏忽下面的认识仅仅基于个人观点如有不严谨之处欢迎通过邮箱与我共同探讨从总体来看国外基本上已经是魏蜀吴三分天下国内目前还处在群雄割据时代国外三分天下的分别是和相比于国内国外目前无论是投资还是人才密度都很集中基本上都在这三家里形成这种局面的主要原因是的技术遥遥领先同时微软签了独家协议其他公司比如等不能投自研又太慢所以只能投资老二也就是是由的前员工创立的据说这波人当时是觉得被微软投资了之后变的越来越不了于是转头创立了新的公司这里面很多人是崛起路上的核心骨干比如参与过和的研发是的第一作者这波人是真正知道大模型秘密的人所以更像是的小姐妹和等公司发现心中的白月光已经被微软霸占了心里那一着急所以只能去追求白月光的妹妹另开炉灶的出发点也许是好的但是从最后的结果来看并没有比现在的更加哼万恶的资本呢是第三家作为上一个时代的领导者还是有些不服气在投资的同时自研也没有停止终于在年底勉强说自己追平了半年多以前的以上就是目前国外公司的现状商业公司三分天下开源被商业公司吊打除了这些公司以外马斯克的也比较有潜力马斯克的融资能力可比强的多再一个就是财大气粗的苹果苹果肯定是想拥有一个更加智能的的但是目前没发现什么大动作可能内部也在尝试如果尝试结果不太理想后续苹果投资谁可能比较关键感觉光内耗了精神领袖杨立昆看不起然后据说算力分配内斗的厉害只能靠开源来维持一下江湖地位但是还是很感谢开源的再卷几年估计就像操作系统一样最后也就剩下两到三个公司目前看上面个公司的赢面还都挺大小公司就不要想着做通用大模型了国外基本上已经放弃反而在一些细分领域做出有特色的产品抢占了一些市场比如创始人是的作者之一目前日活用户百万主打一个赛博恋爱找一个老公和老婆你的世界你做主国内处境就比较难了第一个困境就是显卡不够老美禁售第二个困境是在显卡资源有限的情况下国内公司并没有出现明显的技术领军公司谁都想干让投资和计算资源更加的分散第三个是中文的高质量语料比起英文确实是有点少互联网上大部分都是喷子和软文最后除了上面那个公司的几百个人知道大模型研发的核心机密其他国家和地区的人才在这波浪潮中完全落后了这也没有办法前沿科技总是掌握在少数人手中现在国内的状态就有点像是老外的曼哈顿计划已经有一定成果了我们呢是从头研发原子弹没有盗火者只能自己努力一句话总结就是商业和开源群雄并起目前没有拉开显著差距如果从硬件条件来看最有前途的可能是字节云雀字节之前囤了不少卡入场券已经拿到了但是不知道字节有没有真正了解大模型的人才不然卡多也没用之前传言从挖了个人但不知道真假阿里通义千问和百度文心一言由于有云服务属于既卖铲子又淘金所以生存压力应该相对较小大不了只卖铲子就好了而且百度经历了移动互联网时代攒了不少数据虽然说网上语料大多数都是垃圾但是垃圾堆里好好洗一洗优质语料还是比别家的多的腾讯混元卷大模型我个人觉得没啥优势但是毕竟国内老大哥的体量摆在那里可以期待一下未来创业公司比较看好智谱智谱清言月之暗面和海螺这三家智谱属于入局比较早的初期的时候在榜上也是很能打的而且背靠着清华不愁拿不到订单活下来才有希望给人的感觉有点像大牛挺多更偏科研一些但是也有融资压力希望投资人对这类的好苗子温柔一点别老想着变现则有点像属于在某个细分领域已经有些成果的公司了我感觉这家公司就比较务实有自己的模型也有自己的产品虽然产品也不是原创但是早期腾讯不就是看谁做的好就直接拿过来么后续能成为小腾讯也说不定百川在最开始的时候优势很大但是随着一些越来越多的开源大公司的算力优势已经把的先发优势抹平甚至超越了然后还没有云平台人才储备猜测没有好也没有很有竞争力的产品如果能和一些没有大模型研发能力的云服务平台合作就好了能够实现双赢四高中生如何利用好人工智能下面我们使用文心一言推荐辅助我们学习已知椭圆直线与椭圆交于两点则的长度是多少给出编程计算并可视化的程序注意不要只给出结果让我们看看效果看起来不错对吗程序运行结果结果是正确的但是实际上有时候他并不那么好用在生成长代码时很容易到达限制导致停止如果同学们能魔法上网使用其中内置的功能就强大的多甚至在求解过程中发现自己的问题他会承认错误并改正篇幅原因如果大家喜欢我会根据大家的意见在下一期出更多的科普和建议谢谢',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-09-10 17:51:46',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://s2.loli.net/2024/04/23/AHetBWhgORPKm8Z.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://theqofhometown.github.io/" title="家乡altas"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/04/23/fvmo4MGOr6u3ZFc.png" alt="家乡altas"/><span class="back-menu-item-text">家乡altas</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.dawnwind.org/" title="晨风社"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/05/12/gJOfd38qrkvhEi1.png" alt="晨风社"/><span class="back-menu-item-text">晨风社</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title">家乡atlas</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://s2.loli.net/2024/05/03/Ryrg4QBUImGcbXt.jpg" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://s2.loli.net/2024/05/03/Ryrg4QBUImGcbXt.jpg"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2024/05/03/eVRCmTEb9If4FaH.jpg" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://s2.loli.net/2024/05/03/eVRCmTEb9If4FaH.jpg"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/hexo/" style="font-size: 1.05rem;">hexo<sup>2</sup></a><a href="/tags/python/" style="font-size: 1.05rem;">python<sup>8</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.05rem;">博客<sup>2</sup></a><a href="/tags/%E5%91%BD%E4%BB%A4%E9%9B%86/" style="font-size: 1.05rem;">命令集<sup>1</sup></a><a href="/tags/%E7%A7%91%E6%99%AE/" style="font-size: 1.05rem;">科普<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" style="font-size: 1.05rem;">自动化<sup>2</sup></a><a href="/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/" style="font-size: 1.05rem;">记事本<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">7</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%99%A8%E9%A3%8E%E6%8A%A5/" itemprop="url">晨风报</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%A7%91%E6%99%AE/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>科普</span></a></span></div></div><h1 class="post-title" itemprop="name headline">初窥人工智能时代（科普向）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-04-25T14:07:00.000Z" title="发表于 2024-04-25 22:07:00">2024-04-25</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-09-10T09:51:46.362Z" title="更新于 2024-09-10 17:51:46">2024-09-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为北京"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>北京</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/1.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/"><header><a class="post-meta-categories" href="/categories/%E6%99%A8%E9%A3%8E%E6%8A%A5/" itemprop="url">晨风报</a><a href="/tags/%E7%A7%91%E6%99%AE/" tabindex="-1" itemprop="url">科普</a><h1 id="CrawlerTitle" itemprop="name headline">初窥人工智能时代（科普向）</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">家乡</span><time itemprop="dateCreated datePublished" datetime="2024-04-25T14:07:00.000Z" title="发表于 2024-04-25 22:07:00">2024-04-25</time><time itemprop="dateCreated datePublished" datetime="2024-09-10T09:51:46.362Z" title="更新于 2024-09-10 17:51:46">2024-09-10</time></header><center>初窥人工智能时代</center>
+
+<p>&ensp;&ensp; “ChatGPT”、“OpenAI”、“通用人工智能”，“大模型”，“提示词工程”，“AIagent”，“LangChain”，“Token”，这些人工智能行业的黑化在2023这个普通又神奇的年份里不断冲刷着大家的认知。相信同学们对这些热门话题都有一定的了解。但到底什么是大模型？国内外发展状况是怎样的？在人工智能火热的今天我们将如何自处？本文将会避免专业晦涩的词汇，从学生的角度，分四个方面为同学们一一讲清楚这些问题。</p>
+<center>一、什么是大模型？</center>
+
+<p>大模型<strong>按照功能</strong>可分为NLP大模型、CV大模型、科学计算大模型和多模态大模型。</p>
+<ul>
+<li><p>CV（计算机视觉）方向：人脸识别、物体检测等，典例如腾讯的PCAM模型。</p>
+</li>
+<li><p>科学计算方向：主要用于解决科学领域的计算问题，如华为的盘古气象模型。</p>
+</li>
+<li><p>多模态方向：比较火的有文生图，文生音，典例如StabilityAI的stablediffusion。</p>
+</li>
+<li><p>NLP（自然语言处理）方向：我们所熟知的OpenAI的GPT系列模型就是这个方向，具备强大的语言理解和生成能力。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/media/19be9ecbbe1bf6c3f8db09c953dda312.png"></p>
+</li>
+</ul>
+<p>本文主要对NLP方向的模型进行科普，下文提到的大模型都是NLP方向的大模型。</p>
+<p>&ensp;&ensp; 你可以把大模型简单的理解为一个成绩普通的大学本科毕业生的大脑，这颗大脑因为多年在校学习的经验，理解了大量人类的通用知识，比如说基础的算数能力，基础的推理能力，了解基础的物理法则，知道人类的发展历史，甚至会说谎。</p>
+<p>&ensp;&ensp; 而大模型在这些方面其实也一样，AI大模型本身是生成模型，它的目标仅仅是根据前面的输入来预测词元（Token）。<strong>所以说大模型的本质是计算概率</strong>。本质上它并不关心你输入的是什么，也无意回答你的问题，它的目标只是为了让文本看起来完整。这就导致了人们所说的大模型的幻觉问题。</p>
+<p>&ensp;&ensp; 举个例子来说，你完全可以让大模型来描述你的早餐，尽管它并没有见过你，更不知道你早餐吃了什么，但并不影响它能很清晰的描述你吃了什么。这是因为它读了大量的wiki文档，人类的web网页，人类曾经写过的小说。这些资料里边，描述早餐就是这样描述的。所以它就按照概率，写出了这样一段文本。所以大模型才经常会发出一些不存在的URL地址，引用一些不存在的论文。仅仅是因为URL和论文在海量的资料里边看起来就是这样的。<strong>这就是大模型的幻觉</strong>。</p>
+<p>&ensp;&ensp; 有在同学可能会想，这跟大学生的大脑也不一样啊？其实是一样的。比如说你要上课了，但是你没有交作业。老师会问你的作业呢？你会从自己的知识库里边搜索怎么回答比较合理：我忘记写了；昨天沉浸于帮老奶奶过马路耽误了写作业的时间；我的作业被哈吉米吃了；我的作业发生了量子隧穿消失了；我也还在找。根据概率挑一个答案来回复老师：我的作业被哈吉米吃了。对你的老师来说，这其实是一种幻觉。你的老师会问：合理吗？从理论上来说，这个可能性也是存在的，但是通过老师多年的执教经验来判定，大概率是假的。这是一个人类分辨出幻觉的例子。而像刚才早餐的描述，我自己知道它是假的，但第三方却很难分辨这段话的真假，这就是幻觉问题的危害。</p>
+<center>二、英伟达扮演的角色</center>
+
+<p>&ensp;&ensp; 在人工智能时代，谁是最大的赢家呢？</p>
+<p>&ensp;&ensp; 无论从技术角度还是财富增长的角度来看，人工智能时代最大的红利获得者似乎是借着AI的东风，实现了财富自由的创业公司创始人。但有句老话说的好，淘金的不一定赚钱，卖铲子一定赚钱，如果AI公司是淘金客，那NVIDIA就是卖铲子的。现在去查NVIDIA的官网，标题已经变成了“人工智能计算领域的领导者”，可见NVIDIA在人工智能浪潮中的获利。</p>
+<p>&ensp;&ensp; 那么为什么AI发展非GPU不可呢？CPU和GPU最大的差别是CPU一般只有8-16个核心，而一个GPU却有上千个核心。有个经典的例子：CPU是一个科研大牛组成的小组，GPU是几千个只会做加减乘除的小学生，好巧不巧进行大模型训练就是计算成千上亿个简单的加减乘除，因此GPU训练模型远远快于CPU。对于这一点本人深有体会，本人电脑显卡3060，在做一个小模型训练项目的时候，和同学的4060性能差了3倍以上。而且显卡是真的贵，游戏级别的显卡3060现在报价2000左右，专业级的如A100一张成本9000卖17万左右，而且这还供不应求。这一点从Sam Altman多次在公开场合的言辞中也可以看出，在过去一整年里，他几乎都在抱怨英伟达GPU短缺，导致OpenAI的GPU供应严重受限的问题。</p>
+<p>&ensp;&ensp; 有意思的是，随着OpenAI估值逼近1000亿大关，Sam Altman不再满足于血拼谷歌和苹果，而是直接向算力霸主英伟达开战。据知情人士透露，Sam Altman正在积极向全球投资者寻求庞大的资金支持，以便建立一座AI芯片制造厂。其中就包括阿布扎比的G42和日本的软银集团，尤其是在与G42的谈判中，涉及金额就已经接近80亿到100亿美元国内外产业现状。</p>
+<center>三、国内外行业现状</center>
+
+<p>&ensp;&ensp; 首先叠个甲，学长并不是什么行业大牛，对市场的认知难免有所错漏与疏忽，下面的认识仅仅基于个人观点，如有不严谨之处，欢迎通过邮箱与我共同探讨。</p>
+<p>&ensp;&ensp; 从总体来看，国外基本上已经是魏蜀吴三分天下，国内目前还处在群雄割据时代。</p>
+<p>&ensp;&ensp; <strong>国外三分天下的分别是OpenAI（ChatGPT）, Anthropic（Claude）和Google（Gemini）。</strong>相比于国内，国外目前无论是投资还是人才密度都很集中，基本上都在这三家里。形成这种局面的主要原因是OpenAI的技术遥遥领先，同时微软签了独家协议，其他公司比如Google，Amazon等不能投OpenAI，自研又太慢，所以只能投资老二，也就是Anthropic。Anthropic是由OpenAI的前员工创立的，据说这波人当时是觉得OpenAI被微软投资了之后变的越来越不Open了，于是转头创立了新的公司Anthropic。这里面很多人是OpenAI崛起路上的核心骨干，比如Dario Amodei参与过GPT-2和GPT-3的研发，Tom Brown是GPT-3的第一作者。这波人是真正知道大模型秘密的人，所以Anthropic更像是OpenAI的小姐妹，Google和Amazon等公司发现心中的白月光OpenAI已经被微软霸占了，心里那一着急，所以只能去追求白月光的妹妹Anthropic。Anthropic另开炉灶的出发点也许是好的，但是从最后的结果来看，Anthropic并没有比现在的OpenAI更加Open。哼！万恶的资本。</p>
+<p>&ensp;&ensp; Google呢，是第三家，作为上一个时代的领导者，还是有些不服气。在投资的同时，自研也没有停止，终于在23年底勉强说自己追平了半年多以前的OpenAI。以上就是目前国外AI公司的现状。商业公司三分天下，开源被商业公司吊打。</p>
+<p>&ensp;&ensp; 除了这些公司以外，马斯克的X.AI也比较有潜力，马斯克的融资能力可比Sam Altman强的多。再一个就是财大气粗的苹果，苹果肯定是想拥有一个更加智能的Siri的。但是目前没发现什么大动作，可能内部也在尝试，如果尝试结果不太理想，后续苹果投资谁可能比较关键。Meta感觉光内耗了，精神领袖杨立昆看不起GPT，然后据说算力分配内斗的厉害，只能靠开源来维持一下江湖地位。但是还是很感谢Meta开源的Llama。再卷几年，估计就像操作系统一样，最后也就剩下两到三个公司。目前看上面3个公司的赢面还都挺大。小公司就不要想着做通用大模型了，国外基本上已经放弃。反而在一些细分领域做出有特色的产品，抢占了一些市场。比如Character AI，创始人是Transformer的作者之一，目前日活用户百万。主打一个赛博恋爱，找一个AI老公和AI老婆，你的世界你做主。</p>
+<p>&ensp;&ensp; <strong>国内处境就比较难了。</strong>第一个困境，就是<strong>显卡不够</strong>，老美禁售。第二个困境是在显卡资源有限的情况下，国内公司并没有出现明显的技术领军公司，谁都想干，让投资和计算资源更加的分散。第三个是中文的<strong>高质量语料比起英文确实是有点少</strong>，互联网上大部分都是喷子和软文。最后，除了上面那3个公司的几百个人知道大模型研发的核心机密，其他国家和地区的<strong>人才在这波浪潮中完全落后了</strong>，这也没有办法，前沿科技总是掌握在少数人手中。现在国内的状态，就有点像是老外的曼哈顿计划已经有一定成果了，我们呢，是从头研发原子弹。没有盗火者，只能自己努力。一句话总结就是商业和开源群雄并起，目前没有拉开​显著差距。</p>
+<p>&ensp;&ensp; 如果从硬件条件来看，最有前途的可能是字节（云雀）。字节之前囤了不少卡，入场券已经拿到了。但是不知道字节有没有真正了解大模型的人才，不然卡多也没用。之前传言从 OpenAI 挖了个人，但不知道真假。</p>
+<p>&ensp;&ensp; 阿里（通义千问）和百度（文心一言）由于有云服务，属于既卖铲子又淘金，所以生存压力应该相对较小，大不了只卖铲子就好了。而且百度经历了PC，移动互联网时代，攒了不少数据。虽然说网上语料大多数都是垃圾，但是垃圾堆里好好洗一洗，优质语料还是比别家的多的。</p>
+<p>&ensp;&ensp; 腾讯（混元）卷大模型我个人觉得没啥优势，但是毕竟国内老大哥的体量摆在那里，可以期待一下未来。</p>
+<p>&ensp;&ensp; 创业公司比较看好：智谱（智谱清言），Moonshot（Kimi月之暗面）和Minimax（海螺AI） 这三家。智谱属于入局比较早的，初期的时候 GLM-130B 在榜上也是很能打的。而且背靠着清华，不愁拿不到订单，活下来才有希望。Moonshot 给人的感觉有点像 Anthropic，大牛挺多，更偏科研一些，但是也有融资压力。希望投资人对这类的好苗子温柔一点，别老想着变现。Minimax 则有点像 Character AI，属于在某个细分领域已经有些成果的公司了。我感觉这家公司就比较务实，有自己的模型，也有自己的产品。虽然产品也不是原创，但是早期腾讯不就是看谁做的好就直接拿过来么？ Minimax 后续能成为小腾讯也说不定。</p>
+<p>&ensp;&ensp; Baichuan（百川） 在最开始的时候优势很大，但是随着一些越来越多的开源，大公司的算力优势已经把 Baichuan 的先发优势抹平甚至超越了，然后还没有云平台，人才储备猜测没有 Moonshot 好，也没有很有竞争力的产品。如果能和一些没有大模型研发能力的云服务平台合作就好了，能够实现双赢。</p>
+<center>四、高中生如何利用好人工智能</center>
+
+<pre><code>下面我们使用文心一言（推荐）辅助我们学习：
+Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两点，则｜AB｜的长度是多少，给出python编程计算并可视化的程序，注意不要只给出结果  
+让我们看看效果：
+</code></pre>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/media/310f43760e4eeef0525b01ed587be47a.png"></p>
+<p>看起来不错对吗？程序运行结果：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/media/d114c5bcf26ba8da09183758c473c651.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/media/10edbd947369ca03bbe132f800c14f5b.png"></p>
+<p>&ensp;&ensp; 结果是正确的，但是实际上，有时候他并不那么好用，在生成长代码时很容易token到达限制导致停止。如果同学们能魔法上网使用GPT-4，其中内置的mathematica功能就强大的多，甚至在求解过程中发现自己的问题，他会承认错误并改正。</p>
+<p>&ensp;&ensp; 篇幅原因，如果大家喜欢，我会根据大家的意见在下一期出更多的科普和建议，谢谢！</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/04/23/AHetBWhgORPKm8Z.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/04/23/AHetBWhgORPKm8Z.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">家乡</div><div class="post-copyright__author_desc">家乡的个人博客</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/')">初窥人工智能时代（科普向）</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://s2.loli.net/2024/05/03/Ryrg4QBUImGcbXt.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/05/03/Ryrg4QBUImGcbXt.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2024/05/03/eVRCmTEb9If4FaH.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/05/03/eVRCmTEb9If4FaH.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=初窥人工智能时代（科普向）&amp;url=https://theqofhometown.github.io/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/&amp;pic=/img/1.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://theqofhometown.github.io" target="_blank">家乡atlas</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%A7%91%E6%99%AE/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>科普<span class="tagsPageCount">1</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/1.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/04/23/%E8%AE%B0%E4%BA%8B%E6%9C%AC%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%85%B3%E9%97%AD/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">记事本无法正常关闭</div></div></a></div><div class="next-post pull-right"><a href="/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">学委小助手</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/04/23/AHetBWhgORPKm8Z.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div></div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">家乡</h1><div class="author-info__desc">家乡的个人博客</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/TheQOfHometown" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/499730992" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来看我的博客鸭~</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/09/10/python%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3/" title="python环境相关问题与解决"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="python环境相关问题与解决"/></a><div class="content"><a class="title" href="/2024/09/10/python%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3/" title="python环境相关问题与解决">python环境相关问题与解决</a><time datetime="2024-09-10T10:38:45.000Z" title="发表于 2024-09-10 18:38:45">2024-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/06/VAE%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/" title="VAE变分自编码器"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VAE变分自编码器"/></a><div class="content"><a class="title" href="/2024/09/06/VAE%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/" title="VAE变分自编码器">VAE变分自编码器</a><time datetime="2024-09-06T10:58:00.000Z" title="发表于 2024-09-06 18:58:00">2024-09-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/" title="学委小助手"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="学委小助手"/></a><div class="content"><a class="title" href="/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/" title="学委小助手">学委小助手</a><time datetime="2024-04-29T09:32:00.000Z" title="发表于 2024-04-29 17:32:00">2024-04-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/" title="初窥人工智能时代（科普向）"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="初窥人工智能时代（科普向）"/></a><div class="content"><a class="title" href="/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/" title="初窥人工智能时代（科普向）">初窥人工智能时代（科普向）</a><time datetime="2024-04-25T14:07:00.000Z" title="发表于 2024-04-25 22:07:00">2024-04-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/04/23/%E8%AE%B0%E4%BA%8B%E6%9C%AC%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%85%B3%E9%97%AD/" title="记事本无法正常关闭"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记事本无法正常关闭"/></a><div class="content"><a class="title" href="/2024/04/23/%E8%AE%B0%E4%BA%8B%E6%9C%AC%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E5%85%B3%E9%97%AD/" title="记事本无法正常关闭">记事本无法正常关闭</a><time datetime="2024-04-23T11:56:31.000Z" title="发表于 2024-04-23 19:56:31">2024-04-23</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 家乡</div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">12</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">5</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="https://theqofhometown.github.io/" title="家乡altas"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/04/23/fvmo4MGOr6u3ZFc.png" alt="家乡altas"/><span class="back-menu-item-text">家乡altas</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://www.dawnwind.org/" title="晨风社"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://s2.loli.net/2024/05/12/gJOfd38qrkvhEi1.png" alt="晨风社"/><span class="back-menu-item-text">晨风社</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/hexo/" style="font-size: 0.88rem;">hexo<sup>2</sup></a><a href="/tags/python/" style="font-size: 0.88rem;">python<sup>8</sup></a><a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 0.88rem;">博客<sup>2</sup></a><a href="/tags/%E5%91%BD%E4%BB%A4%E9%9B%86/" style="font-size: 0.88rem;">命令集<sup>1</sup></a><a href="/tags/%E7%A7%91%E6%99%AE/" style="font-size: 0.88rem;">科普<sup>1</sup></a><a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/" style="font-size: 0.88rem;">自动化<sup>2</sup></a><a href="/tags/%E8%AE%B0%E4%BA%8B%E6%9C%AC/" style="font-size: 0.88rem;">记事本<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2023 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 家乡 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script src="https://cdn.cbd.int/algoliasearch@4.18.0/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.cbd.int/instantsearch.js@4.60.0/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script defer="defer" id="ribbon" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
