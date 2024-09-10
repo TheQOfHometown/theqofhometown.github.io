@@ -107,21 +107,6 @@
       </tags>
   </entry>
   <entry>
-    <title>学委小助手</title>
-    <url>/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
-    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于是某苦逼学委，经常遇到少数几个人没交作业的情况。该代码可以帮助清点作业，希望能帮到大家。</p>
-<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-]]></content>
-      <categories>
-        <category>tips</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>初窥人工智能时代（科普向）</title>
     <url>/2024/04/25/%E5%88%9D%E7%AA%A5%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%97%B6%E4%BB%A3%EF%BC%88%E7%A7%91%E6%99%AE%E5%90%91%EF%BC%89/</url>
     <content><![CDATA[<center>初窥人工智能时代</center>
@@ -186,23 +171,18 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
       </tags>
   </entry>
   <entry>
-    <title>环境配置常用命令</title>
-    <url>/2024/04/14/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="1-conda虚拟环境"><a href="#1-conda虚拟环境" class="headerlink" title="1.conda虚拟环境"></a>1.conda虚拟环境</h2><p>conda remove -n yourname –all<br>conda create –name yourname python&#x3D;3.6<br>conda create –name VAE2 python&#x3D;3.7</p>
-<h2 id="2-pip-版本控制"><a href="#2-pip-版本控制" class="headerlink" title="2.pip 版本控制"></a>2.pip 版本控制</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;20.2.4（降级pip）</p>
-<h2 id="3-cuda与pytorch版本检查"><a href="#3-cuda与pytorch版本检查" class="headerlink" title="3.cuda与pytorch版本检查"></a>3.cuda与pytorch版本检查</h2><p>nvcc -V（检查cuda版本）</p>
-<p>python<br>import torch<br>torch.<strong>version</strong></p>
-<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h1 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h1><p>D:\Users\86159\AppData\Local\Temp\CUDA（11.3.0 CUDA安装路径）<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3（Documentation和Development）<br>C:\Program Files\NVIDIA Corporation\CUDA Samples\v11.3（Samples）</p>
-<h1 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h1><h2 id="1-检查你的脚本能否正常使用gpu加速运算"><a href="#1-检查你的脚本能否正常使用gpu加速运算" class="headerlink" title="1.检查你的脚本能否正常使用gpu加速运算"></a>1.检查你的脚本能否正常使用gpu加速运算</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
-<h2 id="检查你的GPU状态"><a href="#检查你的GPU状态" class="headerlink" title="检查你的GPU状态"></a>检查你的GPU状态</h2><p>nvidia-smi（检查显卡状况，注意这里显示的是显卡最大支持的cuda版本）</p>
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a> 查看pytorch对应版本并获取安装命令(包括torch，torchvision和torchaudio)<br>2.<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a> 下载指定版本cuda<br>3.<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a> 下载指定版本cuddn<br>4.<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support">https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support</a> 查看pytorch-lightning版本对应<br>5.<a href="https://blog.csdn.net/qq_50677040/article/details/132131346">https://blog.csdn.net/qq_50677040/article/details/132131346</a> 多版本cuda切换方法</p>
+    <title>学委小助手</title>
+    <url>/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
+    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于是某苦逼学委，经常遇到少数几个人没交作业的情况。该代码可以帮助清点作业，希望能帮到大家。</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
       <categories>
-        <category>神经网络</category>
+        <category>tips</category>
       </categories>
       <tags>
         <tag>python</tag>
-        <tag>命令集</tag>
       </tags>
   </entry>
   <entry>
@@ -231,6 +211,26 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>环境配置常用命令</title>
+    <url>/2024/04/14/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="1-conda虚拟环境"><a href="#1-conda虚拟环境" class="headerlink" title="1.conda虚拟环境"></a>1.conda虚拟环境</h2><p>conda remove -n yourname –all<br>conda create –name yourname python&#x3D;3.6<br>conda create –name VAE2 python&#x3D;3.7</p>
+<h2 id="2-pip-版本控制"><a href="#2-pip-版本控制" class="headerlink" title="2.pip 版本控制"></a>2.pip 版本控制</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;20.2.4（降级pip）</p>
+<h2 id="3-cuda与pytorch版本检查"><a href="#3-cuda与pytorch版本检查" class="headerlink" title="3.cuda与pytorch版本检查"></a>3.cuda与pytorch版本检查</h2><p>nvcc -V（检查cuda版本）</p>
+<p>python<br>import torch<br>torch.<strong>version</strong></p>
+<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h1 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h1><p>D:\Users\86159\AppData\Local\Temp\CUDA（11.3.0 CUDA安装路径）<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3（Documentation和Development）<br>C:\Program Files\NVIDIA Corporation\CUDA Samples\v11.3（Samples）</p>
+<h1 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h1><h2 id="1-检查你的脚本能否正常使用gpu加速运算"><a href="#1-检查你的脚本能否正常使用gpu加速运算" class="headerlink" title="1.检查你的脚本能否正常使用gpu加速运算"></a>1.检查你的脚本能否正常使用gpu加速运算</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
+<h2 id="检查你的GPU状态"><a href="#检查你的GPU状态" class="headerlink" title="检查你的GPU状态"></a>检查你的GPU状态</h2><p>nvidia-smi（检查显卡状况，注意这里显示的是显卡最大支持的cuda版本）</p>
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a> 查看pytorch对应版本并获取安装命令(包括torch，torchvision和torchaudio)<br>2.<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a> 下载指定版本cuda<br>3.<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a> 下载指定版本cuddn<br>4.<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support">https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support</a> 查看pytorch-lightning版本对应<br>5.<a href="https://blog.csdn.net/qq_50677040/article/details/132131346">https://blog.csdn.net/qq_50677040/article/details/132131346</a> 多版本cuda切换方法</p>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>命令集</tag>
       </tags>
   </entry>
 </search>
