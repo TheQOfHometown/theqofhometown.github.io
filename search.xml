@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>环境配置常用命令</title>
+    <url>/2024/04/14/AAA%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="1-conda虚拟环境"><a href="#1-conda虚拟环境" class="headerlink" title="1.conda虚拟环境"></a>1.conda虚拟环境</h2><p>conda remove -n onnx_tf –all<br>conda create –name SmartHome python&#x3D;3.8<br>conda create -n newname –clone oldname</p>
+<h2 id="2-pip-版本控制"><a href="#2-pip-版本控制" class="headerlink" title="2.pip 版本控制"></a>2.pip 版本控制</h2><p>pip install –upgrade pip(更新pip)</p>
+<p>python -m pip install pip&#x3D;&#x3D;20.2.4（降级pip）</p>
+<h2 id="3-cuda与pytorch版本检查"><a href="#3-cuda与pytorch版本检查" class="headerlink" title="3.cuda与pytorch版本检查"></a>3.cuda与pytorch版本检查</h2><p>nvcc -V（检查cuda版本）</p>
+<p>python<br>import torch<br>torch.<strong>version</strong></p>
+<h2 id="4-从不同源安装pip包"><a href="#4-从不同源安装pip包" class="headerlink" title="4.从不同源安装pip包"></a>4.从不同源安装pip包</h2><p>pip install –index-url <a href="https://pypi.org/simple">https://pypi.org/simple</a> tensorboard 默认源<br>pip install –index-url <a href="https://mirror.tuna.tsinghua.edu.cn/pypi/web/simple">https://mirror.tuna.tsinghua.edu.cn/pypi/web/simple</a> pyqt6-tools 清华源<br>pip install –index-url <a href="https://pypi.tuna.tsinghua.edu.cn/simple">https://pypi.tuna.tsinghua.edu.cn/simple</a> -e. 清华源<br>pip install –index-url <a href="https://mirrors.ustc.edu.cn/pypi/simple">https://mirrors.ustc.edu.cn/pypi/simple</a> onnxruntime 科大源</p>
+<p>pip config set global.index-url <a href="https://mirrors.ustc.edu.cn/pypi/simple/">https://mirrors.ustc.edu.cn/pypi/simple/</a> 更改默认源</p>
+<h2 id="5-卡在Installing-build-dependencies"><a href="#5-卡在Installing-build-dependencies" class="headerlink" title="5.卡在Installing build dependencies"></a>5.卡在Installing build dependencies</h2><p>pip install tensorboard –no-build-isolation </p>
+<h2 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h2><h1 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h1><p>D:\Users\86159\AppData\Local\Temp\CUDA（11.3.0 CUDA安装路径）<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3（Documentation和Development）<br>C:\Program Files\NVIDIA Corporation\CUDA Samples\v11.3（Samples）</p>
+<h1 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h1><h2 id="1-检查你的脚本能否正常使用gpu加速运算"><a href="#1-检查你的脚本能否正常使用gpu加速运算" class="headerlink" title="1.检查你的脚本能否正常使用gpu加速运算"></a>1.检查你的脚本能否正常使用gpu加速运算</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
+<h2 id="检查你的GPU状态"><a href="#检查你的GPU状态" class="headerlink" title="检查你的GPU状态"></a>检查你的GPU状态</h2><p>nvidia-smi（检查显卡状况，注意这里显示的是显卡最大支持的cuda版本）</p>
+<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a> 查看pytorch对应版本并获取安装命令(包括torch，torchvision和torchaudio)<br>2.<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a> 下载指定版本cuda<br>3.<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a> 下载指定版本cuddn<br>4.<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support">https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support</a> 查看pytorch-lightning版本对应<br>5.<a href="https://blog.csdn.net/qq_50677040/article/details/132131346">https://blog.csdn.net/qq_50677040/article/details/132131346</a> 多版本cuda切换方法</p>
+<p>pip install pyqt6-tools</p>
+]]></content>
+      <categories>
+        <category>神经网络</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>命令集</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World!</title>
     <url>/2024/03/04/Hello%20World%EF%BC%81/</url>
     <content><![CDATA[<h2 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h2><p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
@@ -16,35 +41,6 @@
       <tags>
         <tag>hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PyautoGui自动化</title>
-    <url>/2024/04/01/PyautoGui%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-放一个批量截图的小程序"><a href="#1-放一个批量截图的小程序" class="headerlink" title="1.放一个批量截图的小程序"></a>1.放一个批量截图的小程序</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pyautogui</span><br><span class="line"><span class="keyword">import</span> keyboard</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> ImageGrab</span><br><span class="line"></span><br><span class="line">sizex,sizey=pyautogui.size() <span class="comment"># 保存屏幕尺寸</span></span><br><span class="line"><span class="built_in">print</span>(sizex,sizey)</span><br><span class="line">i=<span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i!=<span class="number">0</span>:</span><br><span class="line">    keyboard.wait(<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">    <span class="comment"># 参数说明</span></span><br><span class="line">    <span class="comment"># 第一个参数 开始截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第二个参数 开始截图的y坐标</span></span><br><span class="line">    <span class="comment"># 第三个参数 结束截图的x坐标</span></span><br><span class="line">    <span class="comment"># 第四个参数 结束截图的y坐标</span></span><br><span class="line">    bbox = (<span class="number">0</span>, sizey/<span class="number">2</span>, sizex, sizey)</span><br><span class="line">    im = ImageGrab.grab(bbox)</span><br><span class="line">    picture_name = <span class="built_in">str</span>(i)</span><br><span class="line">    root = <span class="string">&#x27;C:/pr&#x27;</span>  <span class="comment"># 保存地址</span></span><br><span class="line">    path = root + <span class="string">&quot;/&quot;</span> + picture_name +<span class="string">&#x27;.png&#x27;</span> <span class="comment"># 保存地址</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        im.save(path)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存成功，保存在&#x27;</span> + root + <span class="string">&quot;\n&quot;</span>)</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;图片保存失败&#x27;</span>)</span><br><span class="line">    i+=<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/302592540">https://zhuanlan.zhihu.com/p/302592540</a> 这个库的简单介绍<br>2.<a href="https://blog.csdn.net/coco56/article/details/107847467">https://blog.csdn.net/coco56/article/details/107847467</a> 介绍了一下python监听键盘的方法<br>3.<a href="https://blog.csdn.net/tscaxx/article/details/108757876">https://blog.csdn.net/tscaxx/article/details/108757876</a> 救命了，screenshot函数找不到的问题的一个替代方案<br>4.<a href="https://blog.csdn.net/weixin_30655569/article/details/94790215">https://blog.csdn.net/weixin_30655569/article/details/94790215</a> win32api的安装方法：pip install pypiwin32</p>
-]]></content>
-      <categories>
-        <category>tips</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>自动化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python自动化剪视频</title>
-    <url>/2024/03/28/Python%E8%87%AA%E5%8A%A8%E5%8C%96%E5%89%AA%E8%A7%86%E9%A2%91/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-本人电脑剪映草稿位置："><a href="#1-本人电脑剪映草稿位置：" class="headerlink" title="1.本人电脑剪映草稿位置："></a>1.本人电脑剪映草稿位置：</h2><p>C:\Users\86159\AppData\Local\JianyingPro\User Data\Projects\com.lveditor.draft</p>
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://www.teaxia.com/archives/1208/">https://www.teaxia.com/archives/1208/</a>  介绍了剪映草稿所需的两个json文件（draft_content.json和draft_meta_info.json）<br>2.<a href="https://blog.csdn.net/a820206256/article/details/134428639">https://blog.csdn.net/a820206256/article/details/134428639</a>  两个json文件的深度解析，有示例代码<br>3.<a href="https://blog.csdn.net/qq_43211132/article/details/103784910">https://blog.csdn.net/qq_43211132/article/details/103784910</a> 解决了user路径报错的问题</p>
-]]></content>
-      <categories>
-        <category>工程记录</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>自动化</tag>
       </tags>
   </entry>
   <entry>
@@ -65,10 +61,11 @@
   <entry>
     <title>VAE变分自编码器</title>
     <url>/2024/09/06/VAE%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><h2 id="1-pip版本的适配"><a href="#1-pip版本的适配" class="headerlink" title="1.pip版本的适配"></a>1.pip版本的适配</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;19.2（降级pip）<br>这里使用20.2.4安装比较好</p>
-<h2 id="2-conda命令"><a href="#2-conda命令" class="headerlink" title="2.conda命令"></a>2.conda命令</h2><p>conda remove -n VAE3 –all<br>conda create –name VAE3 python&#x3D;3.6</p>
+    <content><![CDATA[<h1 id="VAEPytorch"><a href="#VAEPytorch" class="headerlink" title="VAEPytorch"></a>VAEPytorch</h1><h2 id="1-pip版本的适配"><a href="#1-pip版本的适配" class="headerlink" title="1.pip版本的适配"></a>1.pip版本的适配</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;19.2（降级pip）<br>这里使用20.2.4安装比较好</p>
+<h2 id="2-conda命令"><a href="#2-conda命令" class="headerlink" title="2.conda命令"></a>2.conda命令</h2><p>conda remove -n VAEPytorch –all<br>conda create –name VAEPytorch python&#x3D;3.6</p>
 <h2 id="3-使用"><a href="#3-使用" class="headerlink" title="3.使用"></a>3.使用</h2><p>python run.py -c configs&#x2F;bbvae.yaml</p>
 <h2 id="4-pytorch安装"><a href="#4-pytorch安装" class="headerlink" title="4.pytorch安装"></a>4.pytorch安装</h2><p>要cuda11.3</p>
+<h1 id="VAE学长"><a href="#VAE学长" class="headerlink" title="VAE学长"></a>VAE学长</h1><h2 id="1-pip版本的适配-1"><a href="#1-pip版本的适配-1" class="headerlink" title="1.pip版本的适配"></a>1.pip版本的适配</h2><p>conda create –name VAE python&#x3D;3.6</p>
 <h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://blog.csdn.net/qq_39635835/article/details/140235059">https://blog.csdn.net/qq_39635835/article/details/140235059</a> NCCL检测不到的问题</p>
 ]]></content>
       <categories>
@@ -211,26 +208,6 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
       </categories>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>环境配置常用命令</title>
-    <url>/2024/04/14/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><h2 id="1-conda虚拟环境"><a href="#1-conda虚拟环境" class="headerlink" title="1.conda虚拟环境"></a>1.conda虚拟环境</h2><p>conda remove -n yourname –all<br>conda create –name yourname python&#x3D;3.6<br>conda create –name VAE2 python&#x3D;3.7</p>
-<h2 id="2-pip-版本控制"><a href="#2-pip-版本控制" class="headerlink" title="2.pip 版本控制"></a>2.pip 版本控制</h2><p>pip install –upgrade pip(更新pip)<br>python -m pip install pip&#x3D;&#x3D;20.2.4（降级pip）</p>
-<h2 id="3-cuda与pytorch版本检查"><a href="#3-cuda与pytorch版本检查" class="headerlink" title="3.cuda与pytorch版本检查"></a>3.cuda与pytorch版本检查</h2><p>nvcc -V（检查cuda版本）</p>
-<p>python<br>import torch<br>torch.<strong>version</strong></p>
-<h2 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h2><h2 id="5"><a href="#5" class="headerlink" title="5."></a>5.</h2><h1 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h1><p>D:\Users\86159\AppData\Local\Temp\CUDA（11.3.0 CUDA安装路径）<br>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.3（Documentation和Development）<br>C:\Program Files\NVIDIA Corporation\CUDA Samples\v11.3（Samples）</p>
-<h1 id="环境检测"><a href="#环境检测" class="headerlink" title="环境检测"></a>环境检测</h1><h2 id="1-检查你的脚本能否正常使用gpu加速运算"><a href="#1-检查你的脚本能否正常使用gpu加速运算" class="headerlink" title="1.检查你的脚本能否正常使用gpu加速运算"></a>1.检查你的脚本能否正常使用gpu加速运算</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="built_in">print</span>(torch.__version__)</span><br><span class="line"><span class="built_in">print</span>(torch.cuda.is_available())</span><br><span class="line"><span class="built_in">print</span>(torch.backends.cudnn.version())</span><br></pre></td></tr></table></figure>
-<h2 id="检查你的GPU状态"><a href="#检查你的GPU状态" class="headerlink" title="检查你的GPU状态"></a>检查你的GPU状态</h2><p>nvidia-smi（检查显卡状况，注意这里显示的是显卡最大支持的cuda版本）</p>
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://pytorch.org/get-started/previous-versions/">https://pytorch.org/get-started/previous-versions/</a> 查看pytorch对应版本并获取安装命令(包括torch，torchvision和torchaudio)<br>2.<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a> 下载指定版本cuda<br>3.<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a> 下载指定版本cuddn<br>4.<a href="https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support">https://lightning.ai/docs/pytorch/latest/versioning.html#pytorch-support</a> 查看pytorch-lightning版本对应<br>5.<a href="https://blog.csdn.net/qq_50677040/article/details/132131346">https://blog.csdn.net/qq_50677040/article/details/132131346</a> 多版本cuda切换方法</p>
-]]></content>
-      <categories>
-        <category>神经网络</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>命令集</tag>
       </tags>
   </entry>
 </search>
