@@ -26,17 +26,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World!</title>
-    <url>/2024/03/04/Hello%20World%EF%BC%81/</url>
-    <content><![CDATA[<h2 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h2><p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
-<p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
-<p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
-<p>4.本地测试方法<br>hexo s<br>然后访问 <a href="http://localhost:4000/">http://localhost:4000/</a></p>
-<p>5.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p>1.<a href="https://blog.csdn.net/wxmiy/article/details/89740575">https://blog.csdn.net/wxmiy/article/details/89740575</a> 介绍了一个网易云mp3外链的获取方法，缺点是vip音乐不行<br>2.<a href="https://music.gimhoy.com/">https://music.gimhoy.com/</a> 一个mp3文件转mp3外链的解决方案（2024-3-28还没寄）</p>
+    <title>python环境相关问题与解决</title>
+    <url>/2024/09/10/python%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3/</url>
+    <content><![CDATA[<p>1.安装包时代码报错ERROR: Could not install packages due to an OSError: [WinError 2] 系统找不到指定的文件<br>解：需要用管理员权限运行命令提示符</p>
 ]]></content>
       <categories>
-        <category>工程记录</category>
+        <category>神经网络</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -76,12 +71,17 @@
       </tags>
   </entry>
   <entry>
-    <title>python环境相关问题与解决</title>
-    <url>/2024/09/10/python%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98%E4%B8%8E%E8%A7%A3%E5%86%B3/</url>
-    <content><![CDATA[<p>1.安装包时代码报错ERROR: Could not install packages due to an OSError: [WinError 2] 系统找不到指定的文件<br>解：需要用管理员权限运行命令提示符</p>
+    <title>Hello World!</title>
+    <url>/2024/03/04/Hello%20World%EF%BC%81/</url>
+    <content><![CDATA[<h2 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h2><p>1.403链接失败的解决方法，老是用梯子的报应<br>git config –global http.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>git config –global https.proxy <a href="http://127.0.0.1:21882/">http://127.0.0.1:21882</a><br>设置个人接口<br>git config –global –unset http.proxy<br>git config –global –unset https.proxy<br>取消个人接口设置</p>
+<p>2.hexo三件套<br>hexo clean<br>hexo g<br>hexo d</p>
+<p>3.可以尝试ping一下github看看是不是网络传输问题<br>ping github.com</p>
+<p>4.本地测试方法<br>hexo s<br>然后访问 <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+<p>5.yml设置别忘了改<br>deploy:<br>  type: git<br>  repo: <a href="https://github.com/TheQOfHometown/theqofhometown.github.io.git">https://github.com/TheQOfHometown/theqofhometown.github.io.git</a><br>  branch: main</p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p>1.<a href="https://blog.csdn.net/wxmiy/article/details/89740575">https://blog.csdn.net/wxmiy/article/details/89740575</a> 介绍了一个网易云mp3外链的获取方法，缺点是vip音乐不行<br>2.<a href="https://music.gimhoy.com/">https://music.gimhoy.com/</a> 一个mp3文件转mp3外链的解决方案（2024-3-28还没寄）</p>
 ]]></content>
       <categories>
-        <category>神经网络</category>
+        <category>工程记录</category>
       </categories>
       <tags>
         <tag>hexo</tag>
@@ -95,6 +95,21 @@
 <h2 id="2-如果需要用到管理员权限"><a href="#2-如果需要用到管理员权限" class="headerlink" title="2.如果需要用到管理员权限"></a>2.如果需要用到管理员权限</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> ctypes</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">is_admin</span>():</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">return</span> ctypes.windll.shell32.IsUserAnAdmin()</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> is_admin():</span><br><span class="line">    <span class="comment">#在此输入你要用管理员权限执行的代码</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    ctypes.windll.shell32.ShellExecuteW(<span class="literal">None</span>, <span class="string">&quot;runas&quot;</span>, sys.executable, <span class="string">&quot; &quot;</span>.join(sys.argv), <span class="literal">None</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 
 <h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>1.<a href="https://zhuanlan.zhihu.com/p/91342640">https://zhuanlan.zhihu.com/p/91342640</a> subprocess的简单介绍<br>2.<a href="https://blog.csdn.net/m0_66922250/article/details/133928172">https://blog.csdn.net/m0_66922250/article/details/133928172</a> 不同环境的串联</p>
+]]></content>
+      <categories>
+        <category>tips</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学委小助手</title>
+    <url>/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
+    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于是某苦逼学委，经常遇到少数几个人没交作业的情况。该代码可以帮助清点作业，希望能帮到大家。</p>
+<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
       <categories>
         <category>tips</category>
@@ -165,21 +180,6 @@ Eg：已知椭圆r：x\^2/4+y\^2/3=1，直线y＝2x＋1与椭圆r交于A，B两�
       </categories>
       <tags>
         <tag>科普</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学委小助手</title>
-    <url>/2024/04/29/%E5%AD%A6%E5%A7%94%E5%B0%8F%E5%8A%A9%E6%89%8B/</url>
-    <content><![CDATA[<h1 id="开发背景"><a href="#开发背景" class="headerlink" title="开发背景"></a>开发背景</h1><p>由于是某苦逼学委，经常遇到少数几个人没交作业的情况。该代码可以帮助清点作业，希望能帮到大家。</p>
-<h1 id="代码部分"><a href="#代码部分" class="headerlink" title="代码部分"></a>代码部分</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">folder_path = <span class="string">r&#x27;&#x27;</span><span class="comment">#配置你自己的文件夹路径eg：C:\Users\86159\Desktop\项目管理论文</span></span><br><span class="line">excel_path = <span class="string">r&quot;&quot;</span><span class="comment">#配置你自己的名单路径eg：D:\user\班级资料\名单.xlsx</span></span><br><span class="line">files_in_folder = [f <span class="keyword">for</span> f <span class="keyword">in</span> os.listdir(folder_path) <span class="keyword">if</span> os.path.isfile(os.path.join(folder_path, f))]</span><br><span class="line">df = pd.read_excel(excel_path)</span><br><span class="line">df[<span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;否&#x27;</span></span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    name_to_check = row[<span class="string">&#x27;Name&#x27;</span>]  <span class="comment"># 在你的Excel中创建一个名为&#x27;Name&#x27;的列，否则这一行会报错</span></span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files_in_folder:</span><br><span class="line">        <span class="keyword">if</span> name_to_check <span class="keyword">in</span> file:</span><br><span class="line">            df.at[index, <span class="string">&#x27;是否包含&#x27;</span>] = <span class="string">&#x27;是&#x27;</span></span><br><span class="line">            <span class="keyword">break</span>  </span><br><span class="line"><span class="keyword">for</span> index, row <span class="keyword">in</span> df.iterrows():</span><br><span class="line">    <span class="keyword">if</span> row[<span class="string">&#x27;是否包含&#x27;</span>] == <span class="string">&#x27;否&#x27;</span>:  </span><br><span class="line">        <span class="built_in">print</span>(row[<span class="string">&#x27;Name&#x27;</span>]) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-]]></content>
-      <categories>
-        <category>tips</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
